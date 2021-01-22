@@ -138,6 +138,8 @@
  */
 - (void)chatController:(TUIChatController *)controller onSelectMessageContent:(TUIMessageCell *)cell;
 
+- (V2TIMOfflinePushInfo *)chatController:(TUIChatController *)controller onMakeOfflinePushInfo:(TUIMessageCellData *)cellData;
+
 @end
 
 

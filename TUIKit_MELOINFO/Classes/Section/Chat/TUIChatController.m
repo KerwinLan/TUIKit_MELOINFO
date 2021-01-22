@@ -413,6 +413,13 @@
     }
 }
 
+- (V2TIMOfflinePushInfo *)messageController:(TUIMessageController *)controller onMakeOfflinePushInfo:(TUIMessageCellData *)cellData {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(chatController:onMakeOfflinePushInfo:)]) {
+        return [self.delegate chatController:self onMakeOfflinePushInfo:cellData];
+    }
+    return nil;
+}
+
 - (void)didHideMenuInMessageController:(TUIMessageController *)controller
 {
     _inputController.inputBar.inputTextView.overrideNextResponder = nil;

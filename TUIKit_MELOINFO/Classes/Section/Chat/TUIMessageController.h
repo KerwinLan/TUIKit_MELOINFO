@@ -102,6 +102,11 @@
  *  @param cell 所点击的入群消息单元
  */
 
+@optional
+
+/**
+ 当前发送消息离线push内容设置
+ */
 - (V2TIMOfflinePushInfo *)messageController:(TUIMessageController *)controller onMakeOfflinePushInfo:(TUIMessageCellData *)cellData;
 @end
 
