@@ -7,6 +7,7 @@
 
 #import "NSBundle+TUIKIT.h"
 #import "TUIKitConfig.h"
+#import "TUIKit.h"
 
 @implementation NSBundle (TUIKIT)
 
@@ -23,30 +24,34 @@
 {
     static NSBundle *bundle = nil;
     if (bundle == nil) {
-        // 默认跟随系统
-        // todo: 外部可配置
-        NSString *language = [NSLocale preferredLanguages].firstObject;
-
-        if ([language hasPrefix:@"en"]) {
-            language = @"en";
-        } else if ([language hasPrefix:@"zh"]) {
-            if ([language rangeOfString:@"Hans"].location != NSNotFound) {
-                language = @"zh-Hans"; // 简体中文
-            } else { // zh-Hant\zh-HK\zh-TW
-                language = @"zh-Hant"; // 繁體中文
-            }
-        } else if ([language hasPrefix:@"ko"]) {
-            language = @"ko";
-        } else if ([language hasPrefix:@"ru"]) {
-            language = @"ru";
-        } else if ([language hasPrefix:@"uk"]) {
-            language = @"uk";
+        if (TUIKit.sharedInstance.config.language == TUIKitLanguageChineseSimplified) {
+            bundle = [NSBundle bundleWithPath:[[NSBundle tk_tuikitBundle] pathForResource:@"zh-Hans" ofType:@"lproj"]];
         } else {
-            language = @"en";
+            // todo: 外部可配置
+            NSString *language = [NSLocale preferredLanguages].firstObject;
+
+            if ([language hasPrefix:@"en"]) {
+                language = @"en";
+            } else if ([language hasPrefix:@"zh"]) {
+                if ([language rangeOfString:@"Hans"].location != NSNotFound) {
+                    language = @"zh-Hans"; // 简体中文
+                } else { // zh-Hant\zh-HK\zh-TW
+                    language = @"zh-Hant"; // 繁體中文
+                }
+            } else if ([language hasPrefix:@"ko"]) {
+                language = @"ko";
+            } else if ([language hasPrefix:@"ru"]) {
+                language = @"ru";
+            } else if ([language hasPrefix:@"uk"]) {
+                language = @"uk";
+            } else {
+                language = @"en";
+            }
+            
+            // 从bundle中查找资源
+            bundle = [NSBundle bundleWithPath:[[NSBundle tk_tuikitBundle] pathForResource:language ofType:@"lproj"]];
         }
         
-        // 从bundle中查找资源
-        bundle = [NSBundle bundleWithPath:[[NSBundle tk_tuikitBundle] pathForResource:language ofType:@"lproj"]];
     }
     value = [bundle localizedStringForKey:key value:value table:nil];
     return [[NSBundle mainBundle] localizedStringForKey:key value:value table:nil];

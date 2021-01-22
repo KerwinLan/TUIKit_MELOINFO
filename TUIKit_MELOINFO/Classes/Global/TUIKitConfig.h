@@ -29,6 +29,11 @@ typedef NS_ENUM(NSInteger, TUIKitAvatarType) {
     TAvatarTypeRadiusCorner,     /*圆角头像*/
 };
 
+typedef NS_ENUM(NSInteger, TUIKitLanguage) {
+    TUIKitLanguageSystem = 0x11, //跟随系统语言
+    TUIKitLanguageChineseSimplified = 0x12, //简体中文
+};
+
 @interface TUIKitConfig : NSObject
 /**
  * 表情列表（需要注意的是 TUIKit 里面的表情包都是有版权限制的，请在上线的时候替换成自己的表情包，否则会面临法律风险）
@@ -55,6 +60,11 @@ typedef NS_ENUM(NSInteger, TUIKitAvatarType) {
  * 启用群直播入口 YES：启用 NO：关闭 默认：YES
  */
 @property(nonatomic, assign) BOOL enableGroupLiveEntry;
+
+/**
+ 设置语言，默认：跟随系统
+ */
+@property (nonatomic, assign) TUIKitLanguage language;
 
 + (TUIKitConfig *)defaultConfig;
 

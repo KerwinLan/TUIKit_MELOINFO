@@ -485,22 +485,29 @@
         NSLog(@"Unknown message state");
         return;
     }
-    // 设置推送
-    V2TIMOfflinePushInfo *info = [[V2TIMOfflinePushInfo alloc] init];
-    int chatType = 0;
-    NSString *sender = @"";
-    if (self.conversationData.groupID.length > 0) {
-        chatType = 2;
-        sender = self.conversationData.groupID;
-    } else {
-        chatType = 1;
-        NSString *loginUser = [[V2TIMManager sharedInstance] getLoginUser];
-        if (loginUser.length > 0) {
-            sender = loginUser;
-        }
+    V2TIMOfflinePushInfo *info;
+    if (self.delegate && [self.delegate respondsToSelector:@selector(messageController:onMakeOfflinePushInfo:)]) {
+        info = [self.delegate messageController:self onMakeOfflinePushInfo:msg];
     }
-    NSDictionary *extParam = @{@"entity":@{@"action":@(APNs_Business_NormalMsg),@"chatType":@(chatType),@"sender":sender,@"version":@(APNs_Version)}};
-    info.ext = [TUICallUtils dictionary2JsonStr:extParam];
+    if (!info) {
+        // 设置推送
+        info = [[V2TIMOfflinePushInfo alloc] init];
+        int chatType = 0;
+        NSString *sender = @"";
+        if (self.conversationData.groupID.length > 0) {
+            chatType = 2;
+            sender = self.conversationData.groupID;
+        } else {
+            chatType = 1;
+            NSString *loginUser = [[V2TIMManager sharedInstance] getLoginUser];
+            if (loginUser.length > 0) {
+                sender = loginUser;
+            }
+        }
+        NSDictionary *extParam = @{@"entity":@{@"action":@(APNs_Business_NormalMsg),@"chatType":@(chatType),@"sender":sender,@"version":@(APNs_Version)}};
+        info.ext = [TUICallUtils dictionary2JsonStr:extParam];
+    }
+    
     // 发消息
     @weakify(self)
     [[V2TIMManager sharedInstance] sendMessage:imMsg receiver:self.conversationData.userID groupID:self.conversationData.groupID priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
@@ -647,16 +654,20 @@
 
 - (void)onSelectMessage:(TUIMessageCell *)cell
 {
-    if([cell isKindOfClass:[TUIVoiceMessageCell class]]){
+    if([cell isKindOfClass:[TUIVoiceMessageCell class]] &&
+       [self.allowHandleClickCellList containsObject:NSStringFromClass(TUIVoiceMessageCell.class)]){
         [self playVoiceMessage:(TUIVoiceMessageCell *)cell];
     }
-    if ([cell isKindOfClass:[TUIImageMessageCell class]]) {
+    if ([cell isKindOfClass:[TUIImageMessageCell class]] &&
+        [self.allowHandleClickCellList containsObject:NSStringFromClass(TUIImageMessageCell.class)]) {
         [self showImageMessage:(TUIImageMessageCell *)cell];
     }
-    if ([cell isKindOfClass:[TUIVideoMessageCell class]]) {
+    if ([cell isKindOfClass:[TUIVideoMessageCell class]] &&
+        [self.allowHandleClickCellList containsObject:NSStringFromClass(TUIVideoMessageCell.class)]) {
         [self showVideoMessage:(TUIVideoMessageCell *)cell];
     }
-    if ([cell isKindOfClass:[TUIFileMessageCell class]]) {
+    if ([cell isKindOfClass:[TUIFileMessageCell class]] &&
+        [self.allowHandleClickCellList containsObject:NSStringFromClass(TUIFileMessageCell.class)]) {
         [self showFileMessage:(TUIFileMessageCell *)cell];
     }
     if ([self.delegate respondsToSelector:@selector(messageController:onSelectMessageContent:)]) {
@@ -914,6 +925,17 @@
             }
         }
     }
+}
+
+- (NSSet<NSString *> *)allowHandleClickCellList {
+    if (!_allowHandleClickCellList) {
+        NSString *voice = NSStringFromClass(TUIVoiceMessageCell.class);
+        NSString *image = NSStringFromClass(TUIImageMessageCell.class);
+        NSString *video = NSStringFromClass(TUIVideoMessageCell.class);
+        NSString *file = NSStringFromClass(TUIFileMessageCell.class);
+        _allowHandleClickCellList = [[NSSet alloc] initWithObjects:voice, image, video, file, nil];
+    }
+    return _allowHandleClickCellList;
 }
 
 @end

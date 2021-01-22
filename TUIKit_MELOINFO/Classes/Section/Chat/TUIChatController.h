@@ -164,6 +164,8 @@
  */
 @interface TUIChatController : UIViewController
 
+@property (nonatomic, strong, readonly) TUIConversationCellData *conversationData;
+
 //********************************
 @property TUnReadView *unRead;
 //********************************
@@ -243,5 +245,7 @@
  *  需要注意的是，目前版本仅能保存未发送的文本消息作为草稿。
  */
 - (void)saveDraft;
+
+- (void)onLayoutChildViewController;
 
 @end

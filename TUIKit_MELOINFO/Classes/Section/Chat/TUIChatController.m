@@ -31,7 +31,7 @@
 #import "NSBundle+TUIKIT.h"
 
 @interface TUIChatController () <TMessageControllerDelegate, TInputControllerDelegate, UIImagePickerControllerDelegate, UIDocumentPickerDelegate, UINavigationControllerDelegate>
-@property (nonatomic, strong) TUIConversationCellData *conversationData;
+
 @property (nonatomic, strong) UIView *tipsView;
 @property (nonatomic, strong) UILabel *pendencyLabel;
 @property (nonatomic, strong) UIButton *pendencyBtn;
@@ -73,6 +73,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self onLayoutChildViewController];
     [self setupViews];
 }
 
@@ -93,10 +94,7 @@
     }
 }
 
-- (void)setupViews
-{
-    self.view.backgroundColor = [UIColor d_colorWithColorLight:TController_Background_Color dark:TController_Background_Color_Dark];
-
+- (void)onLayoutChildViewController {
     @weakify(self)
     //message
     _messageController = [[TUIMessageController alloc] init];
@@ -118,6 +116,12 @@
     [self addChildViewController:_inputController];
     [self.view addSubview:_inputController.view];
     _inputController.inputBar.inputTextView.text = self.conversationData.draftText;
+}
+
+- (void)setupViews
+{
+    self.view.backgroundColor = [UIColor d_colorWithColorLight:TController_Background_Color dark:TController_Background_Color_Dark];
+
     self.tipsView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tipsView.backgroundColor = RGB(246, 234, 190);
     [self.view addSubview:self.tipsView];
@@ -136,9 +140,9 @@
     [self.pendencyBtn sizeToFit];
     self.tipsView.hidden = YES;
 
-
+    @weakify(self);
     [RACObserve(self.pendencyViewModel, unReadCnt) subscribeNext:^(NSNumber *unReadCnt) {
-        @strongify(self)
+        @strongify(self);
         if ([unReadCnt intValue]) {
             self.pendencyLabel.text = [NSString stringWithFormat:TUILocalizableString(TUIKitChatPendencyRequestToJoinGroupFormat), unReadCnt]; ; // @"%@条入群请求"
             [self.pendencyLabel sizeToFit];

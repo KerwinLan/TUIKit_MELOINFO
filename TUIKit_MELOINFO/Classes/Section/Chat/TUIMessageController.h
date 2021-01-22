@@ -101,6 +101,8 @@
  *  @param controller 委托者，消息控制器
  *  @param cell 所点击的入群消息单元
  */
+
+- (V2TIMOfflinePushInfo *)messageController:(TUIMessageController *)controller onMakeOfflinePushInfo:(TUIMessageCellData *)cellData;
 @end
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -116,6 +118,8 @@
  *  同时本类提供了图像、视频、文件信息的发送功能，直接整合调用了 IM SDK 实现发送功能。
  */
 @interface TUIMessageController : UITableViewController
+
+@property (nonatomic, copy) NSSet<NSString *> *allowHandleClickCellList;
 
 /**
  *  执行 TMessageControllerDelegate 协议的委托

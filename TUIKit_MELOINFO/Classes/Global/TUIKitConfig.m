@@ -33,6 +33,7 @@
         _defaultAvatarImage = [UIImage tk_imageNamed:@"default_c2c_head"];
         _defaultGroupAvatarImage = [UIImage tk_imageNamed:@"default_group_head"];
         _enableGroupLiveEntry = YES;
+        _language = TUIKitLanguageSystem;
         
         [self defaultResourceCache];
         [self defaultFace];
