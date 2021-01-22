@@ -1,14 +1,39 @@
 Pod::Spec.new do |s|
-  s.name         = "HNetworkManager"
-  s.version      = "0.0.8"
-  s.summary      = "A network manager framework"
-  s.homepage     = "https://github.com/KerwinLan/HNetworkManager"
+  s.name         = "TUIKit_Meloinfo"
+  s.version      = "0.0.1"
+  s.summary      = "腾讯TUIKit5.1.2修改版本"
+  s.homepage     = "https://github.com/KerwinLan/TUIKit_MELOINFO"
   s.license      = "MIT"
   s.author             = { "KerwinLAN" => "kerwinlan56@gmail.com" }
-  s.social_media_url   = "https://github.com/KerwinLan/HNetworkManager"
-  s.platform     = :ios, "8.0"
+  s.social_media_url   = "https://github.com/KerwinLan"
+  s.platform     = :ios, "9.0"
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/KerwinLan/HNetworkManager.git", :tag => "#{s.version}" }
-  s.source_files  = "HNetworkManager/*.{h,m}"
+  s.source       = { :git => "https://github.com/KerwinLan/TUIKit_MELOINFO.git", :tag => "#{s.version}" }
+  s.default_subspec = 'Core'
+  s.xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
+  s.libraries = "stdc++"
+  s.pod_target_xcconfig = {
+	"EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
+  s.user_target_xcconfig = {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
+  
+  s.subspec 'Core' do |core|
+    core.source_files  = "TUIKit_MELOINFO/Classes/*.{h,m,mm}"
+    core.vendored_libraries = [
+      "TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb/libopencore-amrnb.a",
+      "TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb/libopencore-amrwb.a"
+    ]
+    core.resources = [
+      "TUIKit_MELOINFO/Resources/TUIKitFace.bundle",
+      "TUIKit_MELOINFO/Resources/TUIKitResource.bundle"
+    ]
+    core.resource_bundles = {
+      "TUIKitLocalizable" => [
+        "TUIKit_MELOINFO/Resources/Localizable/*"
+      ]
+    }
+  end
 
 end
