@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "TUIKit_Meloinfo"
+  s.name         = "TUIKit_MELOINFO"
   s.version      = "0.0.1"
   s.summary      = "腾讯TUIKit5.1.2修改版本"
   s.homepage     = "https://github.com/KerwinLan/TUIKit_MELOINFO"
