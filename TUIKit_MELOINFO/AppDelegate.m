@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TUIKit.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,8 @@
     self.window.rootViewController = [[UIViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [TUIKit sharedInstance];
     return YES;
 }
 

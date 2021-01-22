@@ -21,13 +21,13 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
-  s.static_framework = true
+  #s.static_framework = true
   
   s.subspec 'Core' do |core|
     core.source_files  = "**/TUIKit_MELOINFO/Classes/*.{h,m,mm}"
     core.vendored_libraries = [
       "**/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb/libopencore-amrnb.a",
-      "**/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb/libopencore-amrwb.a"
+      "**/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrwb/libopencore-amrwb.a"
     ]
     core.resources = [
       "**/TUIKit_MELOINFO/Resources/TUIKitFace.bundle",
