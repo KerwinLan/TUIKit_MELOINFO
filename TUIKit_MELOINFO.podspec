@@ -16,7 +16,7 @@ TODO: Add long description of the pod here.
   s.xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
   s.libraries = "stdc++"
   s.pod_target_xcconfig = {
-	"EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
   s.user_target_xcconfig = {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
@@ -24,18 +24,18 @@ TODO: Add long description of the pod here.
   #s.static_framework = true
   
   s.subspec 'Core' do |core|
-    core.source_files  = "**/TUIKit_MELOINFO/Classes/*.{h,m,mm}"
+    core.source_files  = "TUIKit_MELOINFO/Classes/**/*.{h,m,mm}"
     core.vendored_libraries = [
-      "**/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb/libopencore-amrnb.a",
-      "**/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrwb/libopencore-amrwb.a"
+      "TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb/libopencore-amrnb.a",
+      "TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrwb/libopencore-amrwb.a"
     ]
     core.resources = [
-      "**/TUIKit_MELOINFO/Resources/TUIKitFace.bundle",
-      "**/TUIKit_MELOINFO/Resources/TUIKitResource.bundle"
+      "TUIKit_MELOINFO/Resources/TUIKitFace.bundle",
+      "TUIKit_MELOINFO/Resources/TUIKitResource.bundle"
     ]
     core.resource_bundles = {
       "TUIKitLocalizable" => [
-        "**/TUIKit_MELOINFO/Resources/Localizable/*"
+        "TUIKit_MELOINFO/Resources/Localizable/*"
       ]
     }
     core.dependency "TXIMSDK_iOS", "5.1.21"
