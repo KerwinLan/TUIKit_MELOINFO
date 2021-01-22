@@ -1,0 +1,1907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2603A21C32CD0CDE6C84B72E /* libPods-TUIKit_MELOINFOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8512963D5D3FAC578895BFFE /* libPods-TUIKit_MELOINFOTests.a */; };
+		792F9B4F74B86651447721A2 /* libPods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C96DAEA0F97C6719FB3CB07 /* libPods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.a */; };
+		D30E9F5325BA990E00A91C48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D30E9F5225BA990E00A91C48 /* AppDelegate.m */; };
+		D30E9F5725BA991100A91C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30E9F5625BA991100A91C48 /* Assets.xcassets */; };
+		D30E9F5A25BA991100A91C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30E9F5825BA991100A91C48 /* LaunchScreen.storyboard */; };
+		D30E9F5D25BA991100A91C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D30E9F5C25BA991100A91C48 /* main.m */; };
+		D30E9F6725BA991200A91C48 /* TUIKit_MELOINFOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D30E9F6625BA991200A91C48 /* TUIKit_MELOINFOTests.m */; };
+		D30E9F7225BA991200A91C48 /* TUIKit_MELOINFOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D30E9F7125BA991200A91C48 /* TUIKit_MELOINFOUITests.m */; };
+		D34EEE3725BA9A3800CD71E1 /* TUIKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D34EECF525BA9A3700CD71E1 /* TUIKitResource.bundle */; };
+		D34EEE3825BA9A3800CD71E1 /* TUIKitFace.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D34EECF625BA9A3700CD71E1 /* TUIKitFace.bundle */; };
+		D34EEE3925BA9A3800CD71E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D34EECF825BA9A3700CD71E1 /* Localizable.strings */; };
+		D34EEE3A25BA9A3800CD71E1 /* NSString+TUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EECFF25BA9A3800CD71E1 /* NSString+TUICommon.m */; };
+		D34EEE3B25BA9A3800CD71E1 /* TModifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED0425BA9A3800CD71E1 /* TModifyView.m */; };
+		D34EEE3C25BA9A3800CD71E1 /* TUnReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED0525BA9A3800CD71E1 /* TUnReadView.m */; };
+		D34EEE3D25BA9A3800CD71E1 /* TUILocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED0825BA9A3800CD71E1 /* TUILocalStorage.m */; };
+		D34EEE3E25BA9A3800CD71E1 /* THelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED0A25BA9A3800CD71E1 /* THelper.m */; };
+		D34EEE3F25BA9A3800CD71E1 /* TAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED0B25BA9A3800CD71E1 /* TAddCell.m */; };
+		D34EEE4025BA9A3800CD71E1 /* TUIFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED0E25BA9A3800CD71E1 /* TUIFileViewController.m */; };
+		D34EEE4125BA9A3800CD71E1 /* TNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1225BA9A3800CD71E1 /* TNavigationController.m */; };
+		D34EEE4225BA9A3800CD71E1 /* TUIVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1325BA9A3800CD71E1 /* TUIVideoViewController.m */; };
+		D34EEE4325BA9A3800CD71E1 /* TTextEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1425BA9A3800CD71E1 /* TTextEditController.m */; };
+		D34EEE4425BA9A3800CD71E1 /* TDateEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1525BA9A3800CD71E1 /* TDateEditController.m */; };
+		D34EEE4525BA9A3800CD71E1 /* TUIAvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1625BA9A3800CD71E1 /* TUIAvatarViewController.m */; };
+		D34EEE4625BA9A3800CD71E1 /* TUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1725BA9A3800CD71E1 /* TUIImageViewController.m */; };
+		D34EEE4725BA9A3800CD71E1 /* TScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1C25BA9A3800CD71E1 /* TScrollView.m */; };
+		D34EEE4825BA9A3800CD71E1 /* TResponderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED1D25BA9A3800CD71E1 /* TResponderTextView.m */; };
+		D34EEE4925BA9A3800CD71E1 /* TUIProfileCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2125BA9A3800CD71E1 /* TUIProfileCardCell.m */; };
+		D34EEE4A25BA9A3800CD71E1 /* TCommonTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2325BA9A3800CD71E1 /* TCommonTextCell.m */; };
+		D34EEE4B25BA9A3800CD71E1 /* TUIButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2425BA9A3800CD71E1 /* TUIButtonCell.m */; };
+		D34EEE4C25BA9A3800CD71E1 /* TCommonSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2525BA9A3800CD71E1 /* TCommonSwitchCell.m */; };
+		D34EEE4D25BA9A3800CD71E1 /* TCommonAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2625BA9A3800CD71E1 /* TCommonAvatarCell.m */; };
+		D34EEE4E25BA9A3800CD71E1 /* TCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2A25BA9A3800CD71E1 /* TCommonCell.m */; };
+		D34EEE4F25BA9A3800CD71E1 /* TAddHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2C25BA9A3800CD71E1 /* TAddHelper.m */; };
+		D34EEE5025BA9A3800CD71E1 /* TUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2D25BA9A3800CD71E1 /* TUITabBarController.m */; };
+		D34EEE5125BA9A3800CD71E1 /* NSDate+TUIKIT.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2E25BA9A3800CD71E1 /* NSDate+TUIKIT.m */; };
+		D34EEE5225BA9A3800CD71E1 /* UIImage+TUIKIT.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED2F25BA9A3800CD71E1 /* UIImage+TUIKIT.m */; };
+		D34EEE5325BA9A3800CD71E1 /* TPopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED3025BA9A3800CD71E1 /* TPopCell.m */; };
+		D34EEE5425BA9A3800CD71E1 /* TAddCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED3425BA9A3800CD71E1 /* TAddCollectionCell.m */; };
+		D34EEE5525BA9A3800CD71E1 /* TPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED3725BA9A3800CD71E1 /* TPopView.m */; };
+		D34EEE5625BA9A3800CD71E1 /* TUIContactSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED3B25BA9A3800CD71E1 /* TUIContactSelectController.m */; };
+		D34EEE5725BA9A3800CD71E1 /* TContactSelectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED3D25BA9A3800CD71E1 /* TContactSelectViewModel.m */; };
+		D34EEE5825BA9A3800CD71E1 /* TContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4025BA9A3800CD71E1 /* TContactViewModel.m */; };
+		D34EEE5925BA9A3800CD71E1 /* TUIBlackListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4325BA9A3800CD71E1 /* TUIBlackListViewModel.m */; };
+		D34EEE5A25BA9A3800CD71E1 /* TUINewFriendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4425BA9A3800CD71E1 /* TUINewFriendViewModel.m */; };
+		D34EEE5B25BA9A3800CD71E1 /* TUIGroupConversationListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4525BA9A3800CD71E1 /* TUIGroupConversationListViewModel.m */; };
+		D34EEE5C25BA9A3800CD71E1 /* TUIContactListPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4725BA9A3800CD71E1 /* TUIContactListPicker.m */; };
+		D34EEE5D25BA9A3800CD71E1 /* TUIContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4825BA9A3800CD71E1 /* TUIContactController.m */; };
+		D34EEE5E25BA9A3800CD71E1 /* TUIBlackListController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4A25BA9A3800CD71E1 /* TUIBlackListController.m */; };
+		D34EEE5F25BA9A3800CD71E1 /* TCommonPendencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4D25BA9A3800CD71E1 /* TCommonPendencyCell.m */; };
+		D34EEE6025BA9A3800CD71E1 /* TUIContactActionCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED4F25BA9A3800CD71E1 /* TUIContactActionCellData.m */; };
+		D34EEE6125BA9A3800CD71E1 /* TCommonContactSelectCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED5025BA9A3800CD71E1 /* TCommonContactSelectCellData.m */; };
+		D34EEE6225BA9A3800CD71E1 /* TCommonContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED5125BA9A3800CD71E1 /* TCommonContactCell.m */; };
+		D34EEE6325BA9A3800CD71E1 /* TUIContactActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED5225BA9A3800CD71E1 /* TUIContactActionCell.m */; };
+		D34EEE6425BA9A3800CD71E1 /* TCommonContactSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED5325BA9A3800CD71E1 /* TCommonContactSelectCell.m */; };
+		D34EEE6525BA9A3800CD71E1 /* TCommonContactCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED5525BA9A3800CD71E1 /* TCommonContactCellData.m */; };
+		D34EEE6625BA9A3800CD71E1 /* TContactListPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED5725BA9A3800CD71E1 /* TContactListPickerCell.m */; };
+		D34EEE6725BA9A3800CD71E1 /* TCommonPendencyCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED5A25BA9A3800CD71E1 /* TCommonPendencyCellData.m */; };
+		D34EEE6825BA9A3800CD71E1 /* TUIGroupConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED6025BA9A3800CD71E1 /* TUIGroupConversationListController.m */; };
+		D34EEE6925BA9A3800CD71E1 /* TUINewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED6225BA9A3800CD71E1 /* TUINewFriendViewController.m */; };
+		D34EEE6A25BA9A3800CD71E1 /* TUIGroupLiveMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED6A25BA9A3800CD71E1 /* TUIGroupLiveMessageCellData.m */; };
+		D34EEE6B25BA9A3800CD71E1 /* TUIFaceMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED6E25BA9A3800CD71E1 /* TUIFaceMessageCellData.m */; };
+		D34EEE6C25BA9A3800CD71E1 /* TUIFileMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7125BA9A3800CD71E1 /* TUIFileMessageCellData.m */; };
+		D34EEE6D25BA9A3800CD71E1 /* TUIBubbleMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7225BA9A3800CD71E1 /* TUIBubbleMessageCellData.m */; };
+		D34EEE6E25BA9A3800CD71E1 /* TUIJoinGroupMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7325BA9A3800CD71E1 /* TUIJoinGroupMessageCellData.m */; };
+		D34EEE6F25BA9A3800CD71E1 /* TUITextMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7425BA9A3800CD71E1 /* TUITextMessageCellData.m */; };
+		D34EEE7025BA9A3800CD71E1 /* TUISystemMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7525BA9A3800CD71E1 /* TUISystemMessageCellData.m */; };
+		D34EEE7125BA9A3800CD71E1 /* TUIVoiceMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7725BA9A3800CD71E1 /* TUIVoiceMessageCellData.m */; };
+		D34EEE7225BA9A3800CD71E1 /* TUIImageMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7825BA9A3800CD71E1 /* TUIImageMessageCellData.m */; };
+		D34EEE7325BA9A3800CD71E1 /* TUIMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7A25BA9A3800CD71E1 /* TUIMessageCellData.m */; };
+		D34EEE7425BA9A3800CD71E1 /* TUIVideoMessageCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED7B25BA9A3800CD71E1 /* TUIVideoMessageCellData.m */; };
+		D34EEE7525BA9A3800CD71E1 /* TUIGroupPendencyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED8025BA9A3800CD71E1 /* TUIGroupPendencyViewModel.m */; };
+		D34EEE7625BA9A3800CD71E1 /* TUIGroupPendencyCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED8125BA9A3800CD71E1 /* TUIGroupPendencyCellData.m */; };
+		D34EEE7725BA9A3800CD71E1 /* TUIGroupPendencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED8525BA9A3800CD71E1 /* TUIGroupPendencyCell.m */; };
+		D34EEE7825BA9A3800CD71E1 /* TUIGroupPendencyController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED8625BA9A3800CD71E1 /* TUIGroupPendencyController.m */; };
+		D34EEE7925BA9A3800CD71E1 /* TUIMessageCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED8925BA9A3800CD71E1 /* TUIMessageCellLayout.m */; };
+		D34EEE7A25BA9A3800CD71E1 /* TUIChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED8D25BA9A3800CD71E1 /* TUIChatController.m */; };
+		D34EEE7B25BA9A3800CD71E1 /* TUIInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9025BA9A3800CD71E1 /* TUIInputController.m */; };
+		D34EEE7C25BA9A3800CD71E1 /* TUIInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9225BA9A3800CD71E1 /* TUIInputBar.m */; };
+		D34EEE7D25BA9A3800CD71E1 /* TUIRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9325BA9A3800CD71E1 /* TUIRecordView.m */; };
+		D34EEE7E25BA9A3800CD71E1 /* TUIInputMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9625BA9A3800CD71E1 /* TUIInputMoreCell.m */; };
+		D34EEE7F25BA9A3800CD71E1 /* TUIMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9825BA9A3800CD71E1 /* TUIMenuCell.m */; };
+		D34EEE8025BA9A3800CD71E1 /* TUIMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9A25BA9A3800CD71E1 /* TUIMenuView.m */; };
+		D34EEE8125BA9A3800CD71E1 /* TUIFaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9B25BA9A3800CD71E1 /* TUIFaceCell.m */; };
+		D34EEE8225BA9A3800CD71E1 /* TUIFileMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9E25BA9A3800CD71E1 /* TUIFileMessageCell.m */; };
+		D34EEE8325BA9A3800CD71E1 /* TUIVideoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EED9F25BA9A3800CD71E1 /* TUIVideoMessageCell.m */; };
+		D34EEE8425BA9A3800CD71E1 /* TUITextMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDA125BA9A3800CD71E1 /* TUITextMessageCell.m */; };
+		D34EEE8525BA9A3800CD71E1 /* TUIJoinGroupMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDA225BA9A3800CD71E1 /* TUIJoinGroupMessageCell.m */; };
+		D34EEE8625BA9A3800CD71E1 /* TUISystemMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDA325BA9A3800CD71E1 /* TUISystemMessageCell.m */; };
+		D34EEE8725BA9A3800CD71E1 /* TUIImageMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDA525BA9A3800CD71E1 /* TUIImageMessageCell.m */; };
+		D34EEE8825BA9A3800CD71E1 /* TUIFaceMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDA825BA9A3800CD71E1 /* TUIFaceMessageCell.m */; };
+		D34EEE8925BA9A3800CD71E1 /* TUIVoiceMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDAA25BA9A3800CD71E1 /* TUIVoiceMessageCell.m */; };
+		D34EEE8A25BA9A3800CD71E1 /* TUIGroupLiveMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDAC25BA9A3800CD71E1 /* TUIGroupLiveMessageCell.m */; };
+		D34EEE8B25BA9A3800CD71E1 /* TUIBubbleMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDAF25BA9A3800CD71E1 /* TUIBubbleMessageCell.m */; };
+		D34EEE8C25BA9A3800CD71E1 /* TUIMemberPanelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDB725BA9A3800CD71E1 /* TUIMemberPanelCell.m */; };
+		D34EEE8D25BA9A3800CD71E1 /* TUISelectMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDB825BA9A3800CD71E1 /* TUISelectMemberViewController.m */; };
+		D34EEE8E25BA9A3800CD71E1 /* TUISelectMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDB925BA9A3800CD71E1 /* TUISelectMemberCell.m */; };
+		D34EEE8F25BA9A3800CD71E1 /* TUIVideoCallUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDBB25BA9A3800CD71E1 /* TUIVideoCallUserCell.m */; };
+		D34EEE9025BA9A3800CD71E1 /* TUIVideoRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDBC25BA9A3800CD71E1 /* TUIVideoRenderView.m */; };
+		D34EEE9125BA9A3800CD71E1 /* TUIVideoCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDC025BA9A3800CD71E1 /* TUIVideoCallViewController.m */; };
+		D34EEE9225BA9A3800CD71E1 /* TUIAudioCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDC225BA9A3800CD71E1 /* TUIAudioCallViewController.m */; };
+		D34EEE9325BA9A3800CD71E1 /* TUIAudioCallUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDC425BA9A3800CD71E1 /* TUIAudioCallUserCell.m */; };
+		D34EEE9425BA9A3800CD71E1 /* TUIAudioCalledView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDC725BA9A3800CD71E1 /* TUIAudioCalledView.m */; };
+		D34EEE9525BA9A3800CD71E1 /* TUICallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDC825BA9A3800CD71E1 /* TUICallManager.m */; };
+		D34EEE9625BA9A3800CD71E1 /* TUICall+Signal.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDCB25BA9A3800CD71E1 /* TUICall+Signal.m */; };
+		D34EEE9725BA9A3800CD71E1 /* TUICallUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDCC25BA9A3800CD71E1 /* TUICallUtils.m */; };
+		D34EEE9825BA9A3800CD71E1 /* TUICall+TRTC.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDCD25BA9A3800CD71E1 /* TUICall+TRTC.m */; };
+		D34EEE9925BA9A3800CD71E1 /* TUICall.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDD025BA9A3800CD71E1 /* TUICall.m */; };
+		D34EEE9A25BA9A3800CD71E1 /* TUICallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDD325BA9A3800CD71E1 /* TUICallModel.m */; };
+		D34EEE9B25BA9A3800CD71E1 /* TUIFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDD625BA9A3800CD71E1 /* TUIFaceView.m */; };
+		D34EEE9C25BA9A3800CD71E1 /* TUIMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDD725BA9A3800CD71E1 /* TUIMessageCell.m */; };
+		D34EEE9D25BA9A3800CD71E1 /* TUIMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDD825BA9A3800CD71E1 /* TUIMessageController.m */; };
+		D34EEE9E25BA9A3800CD71E1 /* TUIMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDDA25BA9A3800CD71E1 /* TUIMoreView.m */; };
+		D34EEE9F25BA9A3800CD71E1 /* TUIGroupInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDDD25BA9A3800CD71E1 /* TUIGroupInfoController.m */; };
+		D34EEEA025BA9A3800CD71E1 /* TUIGroupMembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDE225BA9A3800CD71E1 /* TUIGroupMembersView.m */; };
+		D34EEEA125BA9A3800CD71E1 /* TUIGroupMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDE425BA9A3800CD71E1 /* TUIGroupMemberCell.m */; };
+		D34EEEA225BA9A3800CD71E1 /* TUIGroupMembersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDE525BA9A3800CD71E1 /* TUIGroupMembersCell.m */; };
+		D34EEEA325BA9A3800CD71E1 /* TUIGroupMemberController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDE625BA9A3800CD71E1 /* TUIGroupMemberController.m */; };
+		D34EEEA425BA9A3800CD71E1 /* UIColor+TUIDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDEE25BA9A3800CD71E1 /* UIColor+TUIDarkMode.m */; };
+		D34EEEA525BA9A3800CD71E1 /* UIImage+TUIDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDEF25BA9A3800CD71E1 /* UIImage+TUIDarkMode.m */; };
+		D34EEEA625BA9A3800CD71E1 /* NSBundle+TUIKIT.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDF425BA9A3800CD71E1 /* NSBundle+TUIKIT.m */; };
+		D34EEEA725BA9A3800CD71E1 /* TUIGroupInfoDataProviderService.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDF625BA9A3800CD71E1 /* TUIGroupInfoDataProviderService.m */; };
+		D34EEEA825BA9A3800CD71E1 /* TUIUserProfileDataProviderService.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDF825BA9A3800CD71E1 /* TUIUserProfileDataProviderService.m */; };
+		D34EEEA925BA9A3800CD71E1 /* TUIMessageDataProviderService.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDFA25BA9A3800CD71E1 /* TUIMessageDataProviderService.m */; };
+		D34EEEAA25BA9A3800CD71E1 /* TNaviBarIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDFD25BA9A3800CD71E1 /* TNaviBarIndicatorView.m */; };
+		D34EEEAB25BA9A3800CD71E1 /* TConversationListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEDFF25BA9A3800CD71E1 /* TConversationListViewModel.m */; };
+		D34EEEAC25BA9A3800CD71E1 /* TUIConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE0225BA9A3800CD71E1 /* TUIConversationListController.m */; };
+		D34EEEAD25BA9A3800CD71E1 /* TUIConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE0425BA9A3800CD71E1 /* TUIConversationCell.m */; };
+		D34EEEAE25BA9A3800CD71E1 /* TUIConversationCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE0525BA9A3800CD71E1 /* TUIConversationCellData.m */; };
+		D34EEEAF25BA9A3800CD71E1 /* CreatGroupAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE0925BA9A3800CD71E1 /* CreatGroupAvatar.m */; };
+		D34EEEB025BA9A3800CD71E1 /* TUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE0B25BA9A3800CD71E1 /* TUIKit.m */; };
+		D34EEEB125BA9A3800CD71E1 /* TIMGroupInfo+DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE0F25BA9A3800CD71E1 /* TIMGroupInfo+DataProvider.m */; };
+		D34EEEB225BA9A3800CD71E1 /* TIMConversation+DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE1325BA9A3800CD71E1 /* TIMConversation+DataProvider.m */; };
+		D34EEEB325BA9A3800CD71E1 /* TIMUserProfile+DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE1525BA9A3800CD71E1 /* TIMUserProfile+DataProvider.m */; };
+		D34EEEB425BA9A3800CD71E1 /* NSString+DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE1625BA9A3800CD71E1 /* NSString+DataProvider.m */; };
+		D34EEEB525BA9A3800CD71E1 /* TIMMessage+DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE1725BA9A3800CD71E1 /* TIMMessage+DataProvider.m */; };
+		D34EEEB625BA9A3800CD71E1 /* TCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE1925BA9A3800CD71E1 /* TCContext.m */; };
+		D34EEEB725BA9A3800CD71E1 /* TCServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE1A25BA9A3800CD71E1 /* TCServiceManager.m */; };
+		D34EEEB825BA9A3800CD71E1 /* TCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE1C25BA9A3800CD71E1 /* TCAnnotation.m */; };
+		D34EEEB925BA9A3800CD71E1 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D34EEE2325BA9A3800CD71E1 /* libopencore-amrwb.a */; };
+		D34EEEBA25BA9A3800CD71E1 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D34EEE2925BA9A3800CD71E1 /* libopencore-amrnb.a */; };
+		D34EEEBB25BA9A3800CD71E1 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE2C25BA9A3800CD71E1 /* amrFileCodec.mm */; };
+		D34EEEBC25BA9A3800CD71E1 /* EMVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE2E25BA9A3800CD71E1 /* EMVoiceConverter.mm */; };
+		D34EEEBD25BA9A3800CD71E1 /* TUIError.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE3225BA9A3800CD71E1 /* TUIError.m */; };
+		D34EEEBE25BA9A3800CD71E1 /* TUIImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE3325BA9A3800CD71E1 /* TUIImageCache.m */; };
+		D34EEEBF25BA9A3800CD71E1 /* TUIKitConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D34EEE3425BA9A3800CD71E1 /* TUIKitConfig.m */; };
+		FFCEEF00CEC9C5533AE401E8 /* libPods-TUIKit_MELOINFO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD86674E7F42BB7921CDB0E /* libPods-TUIKit_MELOINFO.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D30E9F6325BA991200A91C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30E9F4625BA990E00A91C48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30E9F4D25BA990E00A91C48;
+			remoteInfo = TUIKit_MELOINFO;
+		};
+		D30E9F6E25BA991200A91C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D30E9F4625BA990E00A91C48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30E9F4D25BA990E00A91C48;
+			remoteInfo = TUIKit_MELOINFO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056D651D0DEA42D3432EE83D /* Pods-TUIKit_MELOINFO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIKit_MELOINFO.debug.xcconfig"; path = "Target Support Files/Pods-TUIKit_MELOINFO/Pods-TUIKit_MELOINFO.debug.xcconfig"; sourceTree = "<group>"; };
+		0C96DAEA0F97C6719FB3CB07 /* libPods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6943BE2FA15ECFA6D39C89 /* Pods-TUIKit_MELOINFOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIKit_MELOINFOTests.release.xcconfig"; path = "Target Support Files/Pods-TUIKit_MELOINFOTests/Pods-TUIKit_MELOINFOTests.release.xcconfig"; sourceTree = "<group>"; };
+		8512963D5D3FAC578895BFFE /* libPods-TUIKit_MELOINFOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TUIKit_MELOINFOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5931FB1208B39E47A69F015 /* Pods-TUIKit_MELOINFO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIKit_MELOINFO.release.xcconfig"; path = "Target Support Files/Pods-TUIKit_MELOINFO/Pods-TUIKit_MELOINFO.release.xcconfig"; sourceTree = "<group>"; };
+		BB915EA523F60499C663EC60 /* Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.release.xcconfig"; path = "Target Support Files/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D30E9F4E25BA990E00A91C48 /* TUIKit_MELOINFO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUIKit_MELOINFO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30E9F5125BA990E00A91C48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D30E9F5225BA990E00A91C48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D30E9F5625BA991100A91C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D30E9F5925BA991100A91C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D30E9F5B25BA991100A91C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30E9F5C25BA991100A91C48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D30E9F6225BA991200A91C48 /* TUIKit_MELOINFOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUIKit_MELOINFOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30E9F6625BA991200A91C48 /* TUIKit_MELOINFOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUIKit_MELOINFOTests.m; sourceTree = "<group>"; };
+		D30E9F6825BA991200A91C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30E9F6D25BA991200A91C48 /* TUIKit_MELOINFOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUIKit_MELOINFOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30E9F7125BA991200A91C48 /* TUIKit_MELOINFOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUIKit_MELOINFOUITests.m; sourceTree = "<group>"; };
+		D30E9F7325BA991200A91C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34EECF525BA9A3700CD71E1 /* TUIKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIKitResource.bundle; sourceTree = "<group>"; };
+		D34EECF625BA9A3700CD71E1 /* TUIKitFace.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIKitFace.bundle; sourceTree = "<group>"; };
+		D34EECF925BA9A3700CD71E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D34EECFA25BA9A3700CD71E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D34EECFE25BA9A3800CD71E1 /* TAddHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAddHelper.h; sourceTree = "<group>"; };
+		D34EECFF25BA9A3800CD71E1 /* NSString+TUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TUICommon.m"; sourceTree = "<group>"; };
+		D34EED0025BA9A3800CD71E1 /* TScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TScrollView.h; sourceTree = "<group>"; };
+		D34EED0125BA9A3800CD71E1 /* TResponderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TResponderTextView.h; sourceTree = "<group>"; };
+		D34EED0225BA9A3800CD71E1 /* NSDate+TUIKIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TUIKIT.h"; sourceTree = "<group>"; };
+		D34EED0325BA9A3800CD71E1 /* TUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUITabBarController.h; sourceTree = "<group>"; };
+		D34EED0425BA9A3800CD71E1 /* TModifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TModifyView.m; sourceTree = "<group>"; };
+		D34EED0525BA9A3800CD71E1 /* TUnReadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnReadView.m; sourceTree = "<group>"; };
+		D34EED0625BA9A3800CD71E1 /* TPopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPopCell.h; sourceTree = "<group>"; };
+		D34EED0725BA9A3800CD71E1 /* UIImage+TUIKIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TUIKIT.h"; sourceTree = "<group>"; };
+		D34EED0825BA9A3800CD71E1 /* TUILocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILocalStorage.m; sourceTree = "<group>"; };
+		D34EED0925BA9A3800CD71E1 /* TPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPopView.h; sourceTree = "<group>"; };
+		D34EED0A25BA9A3800CD71E1 /* THelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THelper.m; sourceTree = "<group>"; };
+		D34EED0B25BA9A3800CD71E1 /* TAddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAddCell.m; sourceTree = "<group>"; };
+		D34EED0C25BA9A3800CD71E1 /* TAddCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAddCollectionCell.h; sourceTree = "<group>"; };
+		D34EED0E25BA9A3800CD71E1 /* TUIFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIFileViewController.m; sourceTree = "<group>"; };
+		D34EED0F25BA9A3800CD71E1 /* TUIImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIImageViewController.h; sourceTree = "<group>"; };
+		D34EED1025BA9A3800CD71E1 /* TUIAvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIAvatarViewController.h; sourceTree = "<group>"; };
+		D34EED1125BA9A3800CD71E1 /* TDateEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDateEditController.h; sourceTree = "<group>"; };
+		D34EED1225BA9A3800CD71E1 /* TNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNavigationController.m; sourceTree = "<group>"; };
+		D34EED1325BA9A3800CD71E1 /* TUIVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVideoViewController.m; sourceTree = "<group>"; };
+		D34EED1425BA9A3800CD71E1 /* TTextEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTextEditController.m; sourceTree = "<group>"; };
+		D34EED1525BA9A3800CD71E1 /* TDateEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDateEditController.m; sourceTree = "<group>"; };
+		D34EED1625BA9A3800CD71E1 /* TUIAvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIAvatarViewController.m; sourceTree = "<group>"; };
+		D34EED1725BA9A3800CD71E1 /* TUIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIImageViewController.m; sourceTree = "<group>"; };
+		D34EED1825BA9A3800CD71E1 /* TUIFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFileViewController.h; sourceTree = "<group>"; };
+		D34EED1925BA9A3800CD71E1 /* TNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNavigationController.h; sourceTree = "<group>"; };
+		D34EED1A25BA9A3800CD71E1 /* TUIVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVideoViewController.h; sourceTree = "<group>"; };
+		D34EED1B25BA9A3800CD71E1 /* TTextEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTextEditController.h; sourceTree = "<group>"; };
+		D34EED1C25BA9A3800CD71E1 /* TScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TScrollView.m; sourceTree = "<group>"; };
+		D34EED1D25BA9A3800CD71E1 /* TResponderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TResponderTextView.m; sourceTree = "<group>"; };
+		D34EED1F25BA9A3800CD71E1 /* TCommonSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonSwitchCell.h; sourceTree = "<group>"; };
+		D34EED2025BA9A3800CD71E1 /* TCommonAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonAvatarCell.h; sourceTree = "<group>"; };
+		D34EED2125BA9A3800CD71E1 /* TUIProfileCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIProfileCardCell.m; sourceTree = "<group>"; };
+		D34EED2225BA9A3800CD71E1 /* TCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonCell.h; sourceTree = "<group>"; };
+		D34EED2325BA9A3800CD71E1 /* TCommonTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonTextCell.m; sourceTree = "<group>"; };
+		D34EED2425BA9A3800CD71E1 /* TUIButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIButtonCell.m; sourceTree = "<group>"; };
+		D34EED2525BA9A3800CD71E1 /* TCommonSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonSwitchCell.m; sourceTree = "<group>"; };
+		D34EED2625BA9A3800CD71E1 /* TCommonAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonAvatarCell.m; sourceTree = "<group>"; };
+		D34EED2725BA9A3800CD71E1 /* TUIProfileCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIProfileCardCell.h; sourceTree = "<group>"; };
+		D34EED2825BA9A3800CD71E1 /* TUIButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIButtonCell.h; sourceTree = "<group>"; };
+		D34EED2925BA9A3800CD71E1 /* TCommonTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonTextCell.h; sourceTree = "<group>"; };
+		D34EED2A25BA9A3800CD71E1 /* TCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonCell.m; sourceTree = "<group>"; };
+		D34EED2B25BA9A3800CD71E1 /* NSString+TUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TUICommon.h"; sourceTree = "<group>"; };
+		D34EED2C25BA9A3800CD71E1 /* TAddHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAddHelper.m; sourceTree = "<group>"; };
+		D34EED2D25BA9A3800CD71E1 /* TUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUITabBarController.m; sourceTree = "<group>"; };
+		D34EED2E25BA9A3800CD71E1 /* NSDate+TUIKIT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TUIKIT.m"; sourceTree = "<group>"; };
+		D34EED2F25BA9A3800CD71E1 /* UIImage+TUIKIT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TUIKIT.m"; sourceTree = "<group>"; };
+		D34EED3025BA9A3800CD71E1 /* TPopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPopCell.m; sourceTree = "<group>"; };
+		D34EED3125BA9A3800CD71E1 /* TUnReadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnReadView.h; sourceTree = "<group>"; };
+		D34EED3225BA9A3800CD71E1 /* THeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THeader.h; sourceTree = "<group>"; };
+		D34EED3325BA9A3800CD71E1 /* TModifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TModifyView.h; sourceTree = "<group>"; };
+		D34EED3425BA9A3800CD71E1 /* TAddCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAddCollectionCell.m; sourceTree = "<group>"; };
+		D34EED3525BA9A3800CD71E1 /* TAddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAddCell.h; sourceTree = "<group>"; };
+		D34EED3625BA9A3800CD71E1 /* THelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THelper.h; sourceTree = "<group>"; };
+		D34EED3725BA9A3800CD71E1 /* TPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPopView.m; sourceTree = "<group>"; };
+		D34EED3825BA9A3800CD71E1 /* TUILocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILocalStorage.h; sourceTree = "<group>"; };
+		D34EED3A25BA9A3800CD71E1 /* TUIGroupConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupConversationListController.h; sourceTree = "<group>"; };
+		D34EED3B25BA9A3800CD71E1 /* TUIContactSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIContactSelectController.m; sourceTree = "<group>"; };
+		D34EED3D25BA9A3800CD71E1 /* TContactSelectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TContactSelectViewModel.m; sourceTree = "<group>"; };
+		D34EED3E25BA9A3800CD71E1 /* TUIBlackListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIBlackListViewModel.h; sourceTree = "<group>"; };
+		D34EED3F25BA9A3800CD71E1 /* TUINewFriendViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUINewFriendViewModel.h; sourceTree = "<group>"; };
+		D34EED4025BA9A3800CD71E1 /* TContactViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TContactViewModel.m; sourceTree = "<group>"; };
+		D34EED4125BA9A3800CD71E1 /* TUIGroupConversationListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupConversationListViewModel.h; sourceTree = "<group>"; };
+		D34EED4225BA9A3800CD71E1 /* TContactSelectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TContactSelectViewModel.h; sourceTree = "<group>"; };
+		D34EED4325BA9A3800CD71E1 /* TUIBlackListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIBlackListViewModel.m; sourceTree = "<group>"; };
+		D34EED4425BA9A3800CD71E1 /* TUINewFriendViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUINewFriendViewModel.m; sourceTree = "<group>"; };
+		D34EED4525BA9A3800CD71E1 /* TUIGroupConversationListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupConversationListViewModel.m; sourceTree = "<group>"; };
+		D34EED4625BA9A3800CD71E1 /* TContactViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TContactViewModel.h; sourceTree = "<group>"; };
+		D34EED4725BA9A3800CD71E1 /* TUIContactListPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIContactListPicker.m; sourceTree = "<group>"; };
+		D34EED4825BA9A3800CD71E1 /* TUIContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIContactController.m; sourceTree = "<group>"; };
+		D34EED4925BA9A3800CD71E1 /* TUINewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUINewFriendViewController.h; sourceTree = "<group>"; };
+		D34EED4A25BA9A3800CD71E1 /* TUIBlackListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIBlackListController.m; sourceTree = "<group>"; };
+		D34EED4C25BA9A3800CD71E1 /* TContactListPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TContactListPickerCell.h; sourceTree = "<group>"; };
+		D34EED4D25BA9A3800CD71E1 /* TCommonPendencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonPendencyCell.m; sourceTree = "<group>"; };
+		D34EED4E25BA9A3800CD71E1 /* TCommonContactCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonContactCellData.h; sourceTree = "<group>"; };
+		D34EED4F25BA9A3800CD71E1 /* TUIContactActionCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIContactActionCellData.m; sourceTree = "<group>"; };
+		D34EED5025BA9A3800CD71E1 /* TCommonContactSelectCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonContactSelectCellData.m; sourceTree = "<group>"; };
+		D34EED5125BA9A3800CD71E1 /* TCommonContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonContactCell.m; sourceTree = "<group>"; };
+		D34EED5225BA9A3800CD71E1 /* TUIContactActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIContactActionCell.m; sourceTree = "<group>"; };
+		D34EED5325BA9A3800CD71E1 /* TCommonContactSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonContactSelectCell.m; sourceTree = "<group>"; };
+		D34EED5425BA9A3800CD71E1 /* TCommonPendencyCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonPendencyCellData.h; sourceTree = "<group>"; };
+		D34EED5525BA9A3800CD71E1 /* TCommonContactCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonContactCellData.m; sourceTree = "<group>"; };
+		D34EED5625BA9A3800CD71E1 /* TCommonPendencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonPendencyCell.h; sourceTree = "<group>"; };
+		D34EED5725BA9A3800CD71E1 /* TContactListPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TContactListPickerCell.m; sourceTree = "<group>"; };
+		D34EED5825BA9A3800CD71E1 /* TUIContactActionCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIContactActionCellData.h; sourceTree = "<group>"; };
+		D34EED5925BA9A3800CD71E1 /* TCommonContactSelectCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonContactSelectCellData.h; sourceTree = "<group>"; };
+		D34EED5A25BA9A3800CD71E1 /* TCommonPendencyCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCommonPendencyCellData.m; sourceTree = "<group>"; };
+		D34EED5B25BA9A3800CD71E1 /* TCommonContactSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonContactSelectCell.h; sourceTree = "<group>"; };
+		D34EED5C25BA9A3800CD71E1 /* TUIContactActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIContactActionCell.h; sourceTree = "<group>"; };
+		D34EED5D25BA9A3800CD71E1 /* TCommonContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCommonContactCell.h; sourceTree = "<group>"; };
+		D34EED5E25BA9A3800CD71E1 /* TUIContactListPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIContactListPicker.h; sourceTree = "<group>"; };
+		D34EED5F25BA9A3800CD71E1 /* TUIContactSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIContactSelectController.h; sourceTree = "<group>"; };
+		D34EED6025BA9A3800CD71E1 /* TUIGroupConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupConversationListController.m; sourceTree = "<group>"; };
+		D34EED6125BA9A3800CD71E1 /* TUIContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIContactController.h; sourceTree = "<group>"; };
+		D34EED6225BA9A3800CD71E1 /* TUINewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUINewFriendViewController.m; sourceTree = "<group>"; };
+		D34EED6325BA9A3800CD71E1 /* TUIBlackListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIBlackListController.h; sourceTree = "<group>"; };
+		D34EED6625BA9A3800CD71E1 /* TUITextMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUITextMessageCellData.h; sourceTree = "<group>"; };
+		D34EED6725BA9A3800CD71E1 /* TUIJoinGroupMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIJoinGroupMessageCellData.h; sourceTree = "<group>"; };
+		D34EED6825BA9A3800CD71E1 /* TUIBubbleMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIBubbleMessageCellData.h; sourceTree = "<group>"; };
+		D34EED6925BA9A3800CD71E1 /* TUIFileMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFileMessageCellData.h; sourceTree = "<group>"; };
+		D34EED6A25BA9A3800CD71E1 /* TUIGroupLiveMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupLiveMessageCellData.m; sourceTree = "<group>"; };
+		D34EED6B25BA9A3800CD71E1 /* TUISystemMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUISystemMessageCellData.h; sourceTree = "<group>"; };
+		D34EED6C25BA9A3800CD71E1 /* TUIVideoMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVideoMessageCellData.h; sourceTree = "<group>"; };
+		D34EED6D25BA9A3800CD71E1 /* TUIMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMessageCellData.h; sourceTree = "<group>"; };
+		D34EED6E25BA9A3800CD71E1 /* TUIFaceMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIFaceMessageCellData.m; sourceTree = "<group>"; };
+		D34EED6F25BA9A3800CD71E1 /* TUIImageMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIImageMessageCellData.h; sourceTree = "<group>"; };
+		D34EED7025BA9A3800CD71E1 /* TUIVoiceMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVoiceMessageCellData.h; sourceTree = "<group>"; };
+		D34EED7125BA9A3800CD71E1 /* TUIFileMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIFileMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7225BA9A3800CD71E1 /* TUIBubbleMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIBubbleMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7325BA9A3800CD71E1 /* TUIJoinGroupMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIJoinGroupMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7425BA9A3800CD71E1 /* TUITextMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUITextMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7525BA9A3800CD71E1 /* TUISystemMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUISystemMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7625BA9A3800CD71E1 /* TUIGroupLiveMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupLiveMessageCellData.h; sourceTree = "<group>"; };
+		D34EED7725BA9A3800CD71E1 /* TUIVoiceMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVoiceMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7825BA9A3800CD71E1 /* TUIImageMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIImageMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7925BA9A3800CD71E1 /* TUIFaceMessageCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFaceMessageCellData.h; sourceTree = "<group>"; };
+		D34EED7A25BA9A3800CD71E1 /* TUIMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7B25BA9A3800CD71E1 /* TUIVideoMessageCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVideoMessageCellData.m; sourceTree = "<group>"; };
+		D34EED7E25BA9A3800CD71E1 /* TUIGroupPendencyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupPendencyViewModel.h; sourceTree = "<group>"; };
+		D34EED7F25BA9A3800CD71E1 /* TUIGroupPendencyCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupPendencyCellData.h; sourceTree = "<group>"; };
+		D34EED8025BA9A3800CD71E1 /* TUIGroupPendencyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupPendencyViewModel.m; sourceTree = "<group>"; };
+		D34EED8125BA9A3800CD71E1 /* TUIGroupPendencyCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupPendencyCellData.m; sourceTree = "<group>"; };
+		D34EED8225BA9A3800CD71E1 /* TUIGroupPendencyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupPendencyController.h; sourceTree = "<group>"; };
+		D34EED8425BA9A3800CD71E1 /* TUIGroupPendencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupPendencyCell.h; sourceTree = "<group>"; };
+		D34EED8525BA9A3800CD71E1 /* TUIGroupPendencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupPendencyCell.m; sourceTree = "<group>"; };
+		D34EED8625BA9A3800CD71E1 /* TUIGroupPendencyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupPendencyController.m; sourceTree = "<group>"; };
+		D34EED8725BA9A3800CD71E1 /* TUIFaceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFaceCell.h; sourceTree = "<group>"; };
+		D34EED8925BA9A3800CD71E1 /* TUIMessageCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMessageCellLayout.m; sourceTree = "<group>"; };
+		D34EED8A25BA9A3800CD71E1 /* TUIMessageCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMessageCellLayout.h; sourceTree = "<group>"; };
+		D34EED8B25BA9A3800CD71E1 /* TUIMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMessageCell.h; sourceTree = "<group>"; };
+		D34EED8C25BA9A3800CD71E1 /* TUIFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFaceView.h; sourceTree = "<group>"; };
+		D34EED8D25BA9A3800CD71E1 /* TUIChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIChatController.m; sourceTree = "<group>"; };
+		D34EED8E25BA9A3800CD71E1 /* TUIMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMoreView.h; sourceTree = "<group>"; };
+		D34EED9025BA9A3800CD71E1 /* TUIInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIInputController.m; sourceTree = "<group>"; };
+		D34EED9125BA9A3800CD71E1 /* TUIInputMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIInputMoreCell.h; sourceTree = "<group>"; };
+		D34EED9225BA9A3800CD71E1 /* TUIInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIInputBar.m; sourceTree = "<group>"; };
+		D34EED9325BA9A3800CD71E1 /* TUIRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIRecordView.m; sourceTree = "<group>"; };
+		D34EED9425BA9A3800CD71E1 /* TUIInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIInputController.h; sourceTree = "<group>"; };
+		D34EED9525BA9A3800CD71E1 /* TUIInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIInputBar.h; sourceTree = "<group>"; };
+		D34EED9625BA9A3800CD71E1 /* TUIInputMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIInputMoreCell.m; sourceTree = "<group>"; };
+		D34EED9725BA9A3800CD71E1 /* TUIRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIRecordView.h; sourceTree = "<group>"; };
+		D34EED9825BA9A3800CD71E1 /* TUIMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMenuCell.m; sourceTree = "<group>"; };
+		D34EED9925BA9A3800CD71E1 /* TUIMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMessageController.h; sourceTree = "<group>"; };
+		D34EED9A25BA9A3800CD71E1 /* TUIMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMenuView.m; sourceTree = "<group>"; };
+		D34EED9B25BA9A3800CD71E1 /* TUIFaceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIFaceCell.m; sourceTree = "<group>"; };
+		D34EED9D25BA9A3800CD71E1 /* TUIFaceMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFaceMessageCell.h; sourceTree = "<group>"; };
+		D34EED9E25BA9A3800CD71E1 /* TUIFileMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIFileMessageCell.m; sourceTree = "<group>"; };
+		D34EED9F25BA9A3800CD71E1 /* TUIVideoMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVideoMessageCell.m; sourceTree = "<group>"; };
+		D34EEDA025BA9A3800CD71E1 /* TUIVoiceMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVoiceMessageCell.h; sourceTree = "<group>"; };
+		D34EEDA125BA9A3800CD71E1 /* TUITextMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUITextMessageCell.m; sourceTree = "<group>"; };
+		D34EEDA225BA9A3800CD71E1 /* TUIJoinGroupMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIJoinGroupMessageCell.m; sourceTree = "<group>"; };
+		D34EEDA325BA9A3800CD71E1 /* TUISystemMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUISystemMessageCell.m; sourceTree = "<group>"; };
+		D34EEDA425BA9A3800CD71E1 /* TUIGroupLiveMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupLiveMessageCell.h; sourceTree = "<group>"; };
+		D34EEDA525BA9A3800CD71E1 /* TUIImageMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIImageMessageCell.m; sourceTree = "<group>"; };
+		D34EEDA625BA9A3800CD71E1 /* TUIBubbleMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIBubbleMessageCell.h; sourceTree = "<group>"; };
+		D34EEDA725BA9A3800CD71E1 /* TUIFileMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFileMessageCell.h; sourceTree = "<group>"; };
+		D34EEDA825BA9A3800CD71E1 /* TUIFaceMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIFaceMessageCell.m; sourceTree = "<group>"; };
+		D34EEDA925BA9A3800CD71E1 /* TUITextMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUITextMessageCell.h; sourceTree = "<group>"; };
+		D34EEDAA25BA9A3800CD71E1 /* TUIVoiceMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVoiceMessageCell.m; sourceTree = "<group>"; };
+		D34EEDAB25BA9A3800CD71E1 /* TUIVideoMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVideoMessageCell.h; sourceTree = "<group>"; };
+		D34EEDAC25BA9A3800CD71E1 /* TUIGroupLiveMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupLiveMessageCell.m; sourceTree = "<group>"; };
+		D34EEDAD25BA9A3800CD71E1 /* TUISystemMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUISystemMessageCell.h; sourceTree = "<group>"; };
+		D34EEDAE25BA9A3800CD71E1 /* TUIJoinGroupMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIJoinGroupMessageCell.h; sourceTree = "<group>"; };
+		D34EEDAF25BA9A3800CD71E1 /* TUIBubbleMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIBubbleMessageCell.m; sourceTree = "<group>"; };
+		D34EEDB025BA9A3800CD71E1 /* TUIImageMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIImageMessageCell.h; sourceTree = "<group>"; };
+		D34EEDB425BA9A3800CD71E1 /* TUISelectMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUISelectMemberViewController.h; sourceTree = "<group>"; };
+		D34EEDB525BA9A3800CD71E1 /* TUIMemberPanelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMemberPanelCell.h; sourceTree = "<group>"; };
+		D34EEDB625BA9A3800CD71E1 /* TUISelectMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUISelectMemberCell.h; sourceTree = "<group>"; };
+		D34EEDB725BA9A3800CD71E1 /* TUIMemberPanelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMemberPanelCell.m; sourceTree = "<group>"; };
+		D34EEDB825BA9A3800CD71E1 /* TUISelectMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUISelectMemberViewController.m; sourceTree = "<group>"; };
+		D34EEDB925BA9A3800CD71E1 /* TUISelectMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUISelectMemberCell.m; sourceTree = "<group>"; };
+		D34EEDBB25BA9A3800CD71E1 /* TUIVideoCallUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVideoCallUserCell.m; sourceTree = "<group>"; };
+		D34EEDBC25BA9A3800CD71E1 /* TUIVideoRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVideoRenderView.m; sourceTree = "<group>"; };
+		D34EEDBD25BA9A3800CD71E1 /* TUIVideoCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVideoCallViewController.h; sourceTree = "<group>"; };
+		D34EEDBE25BA9A3800CD71E1 /* TUIVideoCallUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVideoCallUserCell.h; sourceTree = "<group>"; };
+		D34EEDBF25BA9A3800CD71E1 /* TUIVideoRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIVideoRenderView.h; sourceTree = "<group>"; };
+		D34EEDC025BA9A3800CD71E1 /* TUIVideoCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIVideoCallViewController.m; sourceTree = "<group>"; };
+		D34EEDC225BA9A3800CD71E1 /* TUIAudioCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIAudioCallViewController.m; sourceTree = "<group>"; };
+		D34EEDC325BA9A3800CD71E1 /* TUIAudioCalledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIAudioCalledView.h; sourceTree = "<group>"; };
+		D34EEDC425BA9A3800CD71E1 /* TUIAudioCallUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIAudioCallUserCell.m; sourceTree = "<group>"; };
+		D34EEDC525BA9A3800CD71E1 /* TUIAudioCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIAudioCallViewController.h; sourceTree = "<group>"; };
+		D34EEDC625BA9A3800CD71E1 /* TUIAudioCallUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIAudioCallUserCell.h; sourceTree = "<group>"; };
+		D34EEDC725BA9A3800CD71E1 /* TUIAudioCalledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIAudioCalledView.m; sourceTree = "<group>"; };
+		D34EEDC825BA9A3800CD71E1 /* TUICallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUICallManager.m; sourceTree = "<group>"; };
+		D34EEDCA25BA9A3800CD71E1 /* TUICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUICall.h; sourceTree = "<group>"; };
+		D34EEDCB25BA9A3800CD71E1 /* TUICall+Signal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TUICall+Signal.m"; sourceTree = "<group>"; };
+		D34EEDCC25BA9A3800CD71E1 /* TUICallUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUICallUtils.m; sourceTree = "<group>"; };
+		D34EEDCD25BA9A3800CD71E1 /* TUICall+TRTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TUICall+TRTC.m"; sourceTree = "<group>"; };
+		D34EEDCE25BA9A3800CD71E1 /* TUICallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUICallModel.h; sourceTree = "<group>"; };
+		D34EEDCF25BA9A3800CD71E1 /* TUICall+Signal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TUICall+Signal.h"; sourceTree = "<group>"; };
+		D34EEDD025BA9A3800CD71E1 /* TUICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUICall.m; sourceTree = "<group>"; };
+		D34EEDD125BA9A3800CD71E1 /* TUICall+TRTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TUICall+TRTC.h"; sourceTree = "<group>"; };
+		D34EEDD225BA9A3800CD71E1 /* TUICallUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUICallUtils.h; sourceTree = "<group>"; };
+		D34EEDD325BA9A3800CD71E1 /* TUICallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUICallModel.m; sourceTree = "<group>"; };
+		D34EEDD425BA9A3800CD71E1 /* TUICallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUICallManager.h; sourceTree = "<group>"; };
+		D34EEDD525BA9A3800CD71E1 /* TUIChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIChatController.h; sourceTree = "<group>"; };
+		D34EEDD625BA9A3800CD71E1 /* TUIFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIFaceView.m; sourceTree = "<group>"; };
+		D34EEDD725BA9A3800CD71E1 /* TUIMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMessageCell.m; sourceTree = "<group>"; };
+		D34EEDD825BA9A3800CD71E1 /* TUIMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMessageController.m; sourceTree = "<group>"; };
+		D34EEDD925BA9A3800CD71E1 /* TUIMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMenuCell.h; sourceTree = "<group>"; };
+		D34EEDDA25BA9A3800CD71E1 /* TUIMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMoreView.m; sourceTree = "<group>"; };
+		D34EEDDB25BA9A3800CD71E1 /* TUIMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMenuView.h; sourceTree = "<group>"; };
+		D34EEDDD25BA9A3800CD71E1 /* TUIGroupInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupInfoController.m; sourceTree = "<group>"; };
+		D34EEDDE25BA9A3800CD71E1 /* TUIGroupMembersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupMembersView.h; sourceTree = "<group>"; };
+		D34EEDDF25BA9A3800CD71E1 /* TUIGroupMembersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupMembersCell.h; sourceTree = "<group>"; };
+		D34EEDE025BA9A3800CD71E1 /* TUIGroupMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupMemberCell.h; sourceTree = "<group>"; };
+		D34EEDE125BA9A3800CD71E1 /* TUIGroupMemberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupMemberController.h; sourceTree = "<group>"; };
+		D34EEDE225BA9A3800CD71E1 /* TUIGroupMembersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupMembersView.m; sourceTree = "<group>"; };
+		D34EEDE325BA9A3800CD71E1 /* TUIGroupInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupInfoController.h; sourceTree = "<group>"; };
+		D34EEDE425BA9A3800CD71E1 /* TUIGroupMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupMemberCell.m; sourceTree = "<group>"; };
+		D34EEDE525BA9A3800CD71E1 /* TUIGroupMembersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupMembersCell.m; sourceTree = "<group>"; };
+		D34EEDE625BA9A3800CD71E1 /* TUIGroupMemberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupMemberController.m; sourceTree = "<group>"; };
+		D34EEDE825BA9A3800CD71E1 /* TUIUserProfileControllerServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIUserProfileControllerServiceProtocol.h; sourceTree = "<group>"; };
+		D34EEDE925BA9A3800CD71E1 /* TUIGroupInfoDataProviderServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupInfoDataProviderServiceProtocol.h; sourceTree = "<group>"; };
+		D34EEDEA25BA9A3800CD71E1 /* TUIUserProfileDataProviderServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIUserProfileDataProviderServiceProtocol.h; sourceTree = "<group>"; };
+		D34EEDEB25BA9A3800CD71E1 /* TUIMessageDataProviderServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMessageDataProviderServiceProtocol.h; sourceTree = "<group>"; };
+		D34EEDEC25BA9A3800CD71E1 /* TUIFriendProfileControllerServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIFriendProfileControllerServiceProtocol.h; sourceTree = "<group>"; };
+		D34EEDEE25BA9A3800CD71E1 /* UIColor+TUIDarkMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TUIDarkMode.m"; sourceTree = "<group>"; };
+		D34EEDEF25BA9A3800CD71E1 /* UIImage+TUIDarkMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TUIDarkMode.m"; sourceTree = "<group>"; };
+		D34EEDF025BA9A3800CD71E1 /* UIImage+TUIDarkMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TUIDarkMode.h"; sourceTree = "<group>"; };
+		D34EEDF125BA9A3800CD71E1 /* UIColor+TUIDarkMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TUIDarkMode.h"; sourceTree = "<group>"; };
+		D34EEDF325BA9A3800CD71E1 /* NSBundle+TUIKIT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TUIKIT.h"; sourceTree = "<group>"; };
+		D34EEDF425BA9A3800CD71E1 /* NSBundle+TUIKIT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TUIKIT.m"; sourceTree = "<group>"; };
+		D34EEDF625BA9A3800CD71E1 /* TUIGroupInfoDataProviderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIGroupInfoDataProviderService.m; sourceTree = "<group>"; };
+		D34EEDF725BA9A3800CD71E1 /* TUIMessageDataProviderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIMessageDataProviderService.h; sourceTree = "<group>"; };
+		D34EEDF825BA9A3800CD71E1 /* TUIUserProfileDataProviderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIUserProfileDataProviderService.m; sourceTree = "<group>"; };
+		D34EEDF925BA9A3800CD71E1 /* TUIUserProfileDataProviderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIUserProfileDataProviderService.h; sourceTree = "<group>"; };
+		D34EEDFA25BA9A3800CD71E1 /* TUIMessageDataProviderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMessageDataProviderService.m; sourceTree = "<group>"; };
+		D34EEDFB25BA9A3800CD71E1 /* TUIGroupInfoDataProviderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIGroupInfoDataProviderService.h; sourceTree = "<group>"; };
+		D34EEDFD25BA9A3800CD71E1 /* TNaviBarIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNaviBarIndicatorView.m; sourceTree = "<group>"; };
+		D34EEDFF25BA9A3800CD71E1 /* TConversationListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TConversationListViewModel.m; sourceTree = "<group>"; };
+		D34EEE0025BA9A3800CD71E1 /* TConversationListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TConversationListViewModel.h; sourceTree = "<group>"; };
+		D34EEE0125BA9A3800CD71E1 /* CreatGroupAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatGroupAvatar.h; sourceTree = "<group>"; };
+		D34EEE0225BA9A3800CD71E1 /* TUIConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIConversationListController.m; sourceTree = "<group>"; };
+		D34EEE0425BA9A3800CD71E1 /* TUIConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIConversationCell.m; sourceTree = "<group>"; };
+		D34EEE0525BA9A3800CD71E1 /* TUIConversationCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIConversationCellData.m; sourceTree = "<group>"; };
+		D34EEE0625BA9A3800CD71E1 /* TUIConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIConversationCell.h; sourceTree = "<group>"; };
+		D34EEE0725BA9A3800CD71E1 /* TUIConversationCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIConversationCellData.h; sourceTree = "<group>"; };
+		D34EEE0825BA9A3800CD71E1 /* TNaviBarIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNaviBarIndicatorView.h; sourceTree = "<group>"; };
+		D34EEE0925BA9A3800CD71E1 /* CreatGroupAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatGroupAvatar.m; sourceTree = "<group>"; };
+		D34EEE0A25BA9A3800CD71E1 /* TUIConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIConversationListController.h; sourceTree = "<group>"; };
+		D34EEE0B25BA9A3800CD71E1 /* TUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIKit.m; sourceTree = "<group>"; };
+		D34EEE0E25BA9A3800CD71E1 /* TIMUserProfile+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TIMUserProfile+DataProvider.h"; sourceTree = "<group>"; };
+		D34EEE0F25BA9A3800CD71E1 /* TIMGroupInfo+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TIMGroupInfo+DataProvider.m"; sourceTree = "<group>"; };
+		D34EEE1025BA9A3800CD71E1 /* TIMConversation+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TIMConversation+DataProvider.h"; sourceTree = "<group>"; };
+		D34EEE1125BA9A3800CD71E1 /* TIMMessage+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TIMMessage+DataProvider.h"; sourceTree = "<group>"; };
+		D34EEE1225BA9A3800CD71E1 /* NSString+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DataProvider.h"; sourceTree = "<group>"; };
+		D34EEE1325BA9A3800CD71E1 /* TIMConversation+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TIMConversation+DataProvider.m"; sourceTree = "<group>"; };
+		D34EEE1425BA9A3800CD71E1 /* TIMGroupInfo+DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TIMGroupInfo+DataProvider.h"; sourceTree = "<group>"; };
+		D34EEE1525BA9A3800CD71E1 /* TIMUserProfile+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TIMUserProfile+DataProvider.m"; sourceTree = "<group>"; };
+		D34EEE1625BA9A3800CD71E1 /* NSString+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DataProvider.m"; sourceTree = "<group>"; };
+		D34EEE1725BA9A3800CD71E1 /* TIMMessage+DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TIMMessage+DataProvider.m"; sourceTree = "<group>"; };
+		D34EEE1925BA9A3800CD71E1 /* TCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCContext.m; sourceTree = "<group>"; };
+		D34EEE1A25BA9A3800CD71E1 /* TCServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCServiceManager.m; sourceTree = "<group>"; };
+		D34EEE1B25BA9A3800CD71E1 /* TCServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCServiceProtocol.h; sourceTree = "<group>"; };
+		D34EEE1C25BA9A3800CD71E1 /* TCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAnnotation.m; sourceTree = "<group>"; };
+		D34EEE1D25BA9A3800CD71E1 /* TCServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCServiceManager.h; sourceTree = "<group>"; };
+		D34EEE1E25BA9A3800CD71E1 /* TCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCContext.h; sourceTree = "<group>"; };
+		D34EEE1F25BA9A3800CD71E1 /* TCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAnnotation.h; sourceTree = "<group>"; };
+		D34EEE2325BA9A3800CD71E1 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		D34EEE2425BA9A3800CD71E1 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		D34EEE2525BA9A3800CD71E1 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		D34EEE2625BA9A3800CD71E1 /* EMVoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceConverter.h; sourceTree = "<group>"; };
+		D34EEE2825BA9A3800CD71E1 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		D34EEE2925BA9A3800CD71E1 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		D34EEE2A25BA9A3800CD71E1 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		D34EEE2C25BA9A3800CD71E1 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		D34EEE2D25BA9A3800CD71E1 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		D34EEE2E25BA9A3800CD71E1 /* EMVoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EMVoiceConverter.mm; sourceTree = "<group>"; };
+		D34EEE2F25BA9A3800CD71E1 /* TUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIKit.h; sourceTree = "<group>"; };
+		D34EEE3125BA9A3800CD71E1 /* TUIKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIKitConfig.h; sourceTree = "<group>"; };
+		D34EEE3225BA9A3800CD71E1 /* TUIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIError.m; sourceTree = "<group>"; };
+		D34EEE3325BA9A3800CD71E1 /* TUIImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIImageCache.m; sourceTree = "<group>"; };
+		D34EEE3425BA9A3800CD71E1 /* TUIKitConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIKitConfig.m; sourceTree = "<group>"; };
+		D34EEE3525BA9A3800CD71E1 /* TUIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIError.h; sourceTree = "<group>"; };
+		D34EEE3625BA9A3800CD71E1 /* TUIImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIImageCache.h; sourceTree = "<group>"; };
+		E3C5E1676FE15A231CA2ECFB /* Pods-TUIKit_MELOINFOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIKit_MELOINFOTests.debug.xcconfig"; path = "Target Support Files/Pods-TUIKit_MELOINFOTests/Pods-TUIKit_MELOINFOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8A8D74ECDAE4BFAF2961D02 /* Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.debug.xcconfig"; path = "Target Support Files/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDD86674E7F42BB7921CDB0E /* libPods-TUIKit_MELOINFO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TUIKit_MELOINFO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D30E9F4B25BA990E00A91C48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34EEEB925BA9A3800CD71E1 /* libopencore-amrwb.a in Frameworks */,
+				D34EEEBA25BA9A3800CD71E1 /* libopencore-amrnb.a in Frameworks */,
+				FFCEEF00CEC9C5533AE401E8 /* libPods-TUIKit_MELOINFO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30E9F5F25BA991200A91C48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2603A21C32CD0CDE6C84B72E /* libPods-TUIKit_MELOINFOTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30E9F6A25BA991200A91C48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792F9B4F74B86651447721A2 /* libPods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		565EF96BCDF957698876BF21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				056D651D0DEA42D3432EE83D /* Pods-TUIKit_MELOINFO.debug.xcconfig */,
+				B5931FB1208B39E47A69F015 /* Pods-TUIKit_MELOINFO.release.xcconfig */,
+				E8A8D74ECDAE4BFAF2961D02 /* Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.debug.xcconfig */,
+				BB915EA523F60499C663EC60 /* Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.release.xcconfig */,
+				E3C5E1676FE15A231CA2ECFB /* Pods-TUIKit_MELOINFOTests.debug.xcconfig */,
+				5B6943BE2FA15ECFA6D39C89 /* Pods-TUIKit_MELOINFOTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA303C34A515CFA707AB5BF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD86674E7F42BB7921CDB0E /* libPods-TUIKit_MELOINFO.a */,
+				0C96DAEA0F97C6719FB3CB07 /* libPods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.a */,
+				8512963D5D3FAC578895BFFE /* libPods-TUIKit_MELOINFOTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30E9F4525BA990E00A91C48 = {
+			isa = PBXGroup;
+			children = (
+				D30E9F5025BA990E00A91C48 /* TUIKit_MELOINFO */,
+				D30E9F6525BA991200A91C48 /* TUIKit_MELOINFOTests */,
+				D30E9F7025BA991200A91C48 /* TUIKit_MELOINFOUITests */,
+				D30E9F4F25BA990E00A91C48 /* Products */,
+				565EF96BCDF957698876BF21 /* Pods */,
+				AA303C34A515CFA707AB5BF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D30E9F4F25BA990E00A91C48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D30E9F4E25BA990E00A91C48 /* TUIKit_MELOINFO.app */,
+				D30E9F6225BA991200A91C48 /* TUIKit_MELOINFOTests.xctest */,
+				D30E9F6D25BA991200A91C48 /* TUIKit_MELOINFOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D30E9F5025BA990E00A91C48 /* TUIKit_MELOINFO */ = {
+			isa = PBXGroup;
+			children = (
+				D34EECFB25BA9A3800CD71E1 /* Classes */,
+				D34EECF425BA9A3700CD71E1 /* Resources */,
+				D30E9F5125BA990E00A91C48 /* AppDelegate.h */,
+				D30E9F5225BA990E00A91C48 /* AppDelegate.m */,
+				D30E9F5625BA991100A91C48 /* Assets.xcassets */,
+				D30E9F5825BA991100A91C48 /* LaunchScreen.storyboard */,
+				D30E9F5B25BA991100A91C48 /* Info.plist */,
+				D30E9F5C25BA991100A91C48 /* main.m */,
+			);
+			path = TUIKit_MELOINFO;
+			sourceTree = "<group>";
+		};
+		D30E9F6525BA991200A91C48 /* TUIKit_MELOINFOTests */ = {
+			isa = PBXGroup;
+			children = (
+				D30E9F6625BA991200A91C48 /* TUIKit_MELOINFOTests.m */,
+				D30E9F6825BA991200A91C48 /* Info.plist */,
+			);
+			path = TUIKit_MELOINFOTests;
+			sourceTree = "<group>";
+		};
+		D30E9F7025BA991200A91C48 /* TUIKit_MELOINFOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D30E9F7125BA991200A91C48 /* TUIKit_MELOINFOUITests.m */,
+				D30E9F7325BA991200A91C48 /* Info.plist */,
+			);
+			path = TUIKit_MELOINFOUITests;
+			sourceTree = "<group>";
+		};
+		D34EECF425BA9A3700CD71E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D34EECF525BA9A3700CD71E1 /* TUIKitResource.bundle */,
+				D34EECF625BA9A3700CD71E1 /* TUIKitFace.bundle */,
+				D34EECF725BA9A3700CD71E1 /* Localizable */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D34EECF725BA9A3700CD71E1 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				D34EECF825BA9A3700CD71E1 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		D34EECFB25BA9A3800CD71E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D34EECFC25BA9A3800CD71E1 /* Section */,
+				D34EEE0B25BA9A3800CD71E1 /* TUIKit.m */,
+				D34EEE0C25BA9A3800CD71E1 /* Util */,
+				D34EEE2025BA9A3800CD71E1 /* Third */,
+				D34EEE2F25BA9A3800CD71E1 /* TUIKit.h */,
+				D34EEE3025BA9A3800CD71E1 /* Global */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D34EECFC25BA9A3800CD71E1 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				D34EECFD25BA9A3800CD71E1 /* Commom */,
+				D34EED3925BA9A3800CD71E1 /* Contact */,
+				D34EED6425BA9A3800CD71E1 /* Chat */,
+				D34EEDDC25BA9A3800CD71E1 /* Group */,
+				D34EEDE725BA9A3800CD71E1 /* Protocol */,
+				D34EEDED25BA9A3800CD71E1 /* Theme */,
+				D34EEDF225BA9A3800CD71E1 /* Localiizable */,
+				D34EEDF525BA9A3800CD71E1 /* Service */,
+				D34EEDFC25BA9A3800CD71E1 /* Conversation */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		D34EECFD25BA9A3800CD71E1 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				D34EECFE25BA9A3800CD71E1 /* TAddHelper.h */,
+				D34EECFF25BA9A3800CD71E1 /* NSString+TUICommon.m */,
+				D34EED0025BA9A3800CD71E1 /* TScrollView.h */,
+				D34EED0125BA9A3800CD71E1 /* TResponderTextView.h */,
+				D34EED0225BA9A3800CD71E1 /* NSDate+TUIKIT.h */,
+				D34EED0325BA9A3800CD71E1 /* TUITabBarController.h */,
+				D34EED0425BA9A3800CD71E1 /* TModifyView.m */,
+				D34EED0525BA9A3800CD71E1 /* TUnReadView.m */,
+				D34EED0625BA9A3800CD71E1 /* TPopCell.h */,
+				D34EED0725BA9A3800CD71E1 /* UIImage+TUIKIT.h */,
+				D34EED0825BA9A3800CD71E1 /* TUILocalStorage.m */,
+				D34EED0925BA9A3800CD71E1 /* TPopView.h */,
+				D34EED0A25BA9A3800CD71E1 /* THelper.m */,
+				D34EED0B25BA9A3800CD71E1 /* TAddCell.m */,
+				D34EED0C25BA9A3800CD71E1 /* TAddCollectionCell.h */,
+				D34EED0D25BA9A3800CD71E1 /* Controller */,
+				D34EED1C25BA9A3800CD71E1 /* TScrollView.m */,
+				D34EED1D25BA9A3800CD71E1 /* TResponderTextView.m */,
+				D34EED1E25BA9A3800CD71E1 /* Cell */,
+				D34EED2B25BA9A3800CD71E1 /* NSString+TUICommon.h */,
+				D34EED2C25BA9A3800CD71E1 /* TAddHelper.m */,
+				D34EED2D25BA9A3800CD71E1 /* TUITabBarController.m */,
+				D34EED2E25BA9A3800CD71E1 /* NSDate+TUIKIT.m */,
+				D34EED2F25BA9A3800CD71E1 /* UIImage+TUIKIT.m */,
+				D34EED3025BA9A3800CD71E1 /* TPopCell.m */,
+				D34EED3125BA9A3800CD71E1 /* TUnReadView.h */,
+				D34EED3225BA9A3800CD71E1 /* THeader.h */,
+				D34EED3325BA9A3800CD71E1 /* TModifyView.h */,
+				D34EED3425BA9A3800CD71E1 /* TAddCollectionCell.m */,
+				D34EED3525BA9A3800CD71E1 /* TAddCell.h */,
+				D34EED3625BA9A3800CD71E1 /* THelper.h */,
+				D34EED3725BA9A3800CD71E1 /* TPopView.m */,
+				D34EED3825BA9A3800CD71E1 /* TUILocalStorage.h */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		D34EED0D25BA9A3800CD71E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED0E25BA9A3800CD71E1 /* TUIFileViewController.m */,
+				D34EED0F25BA9A3800CD71E1 /* TUIImageViewController.h */,
+				D34EED1025BA9A3800CD71E1 /* TUIAvatarViewController.h */,
+				D34EED1125BA9A3800CD71E1 /* TDateEditController.h */,
+				D34EED1225BA9A3800CD71E1 /* TNavigationController.m */,
+				D34EED1325BA9A3800CD71E1 /* TUIVideoViewController.m */,
+				D34EED1425BA9A3800CD71E1 /* TTextEditController.m */,
+				D34EED1525BA9A3800CD71E1 /* TDateEditController.m */,
+				D34EED1625BA9A3800CD71E1 /* TUIAvatarViewController.m */,
+				D34EED1725BA9A3800CD71E1 /* TUIImageViewController.m */,
+				D34EED1825BA9A3800CD71E1 /* TUIFileViewController.h */,
+				D34EED1925BA9A3800CD71E1 /* TNavigationController.h */,
+				D34EED1A25BA9A3800CD71E1 /* TUIVideoViewController.h */,
+				D34EED1B25BA9A3800CD71E1 /* TTextEditController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D34EED1E25BA9A3800CD71E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED1F25BA9A3800CD71E1 /* TCommonSwitchCell.h */,
+				D34EED2025BA9A3800CD71E1 /* TCommonAvatarCell.h */,
+				D34EED2125BA9A3800CD71E1 /* TUIProfileCardCell.m */,
+				D34EED2225BA9A3800CD71E1 /* TCommonCell.h */,
+				D34EED2325BA9A3800CD71E1 /* TCommonTextCell.m */,
+				D34EED2425BA9A3800CD71E1 /* TUIButtonCell.m */,
+				D34EED2525BA9A3800CD71E1 /* TCommonSwitchCell.m */,
+				D34EED2625BA9A3800CD71E1 /* TCommonAvatarCell.m */,
+				D34EED2725BA9A3800CD71E1 /* TUIProfileCardCell.h */,
+				D34EED2825BA9A3800CD71E1 /* TUIButtonCell.h */,
+				D34EED2925BA9A3800CD71E1 /* TCommonTextCell.h */,
+				D34EED2A25BA9A3800CD71E1 /* TCommonCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D34EED3925BA9A3800CD71E1 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED3A25BA9A3800CD71E1 /* TUIGroupConversationListController.h */,
+				D34EED3B25BA9A3800CD71E1 /* TUIContactSelectController.m */,
+				D34EED3C25BA9A3800CD71E1 /* ViewModel */,
+				D34EED4725BA9A3800CD71E1 /* TUIContactListPicker.m */,
+				D34EED4825BA9A3800CD71E1 /* TUIContactController.m */,
+				D34EED4925BA9A3800CD71E1 /* TUINewFriendViewController.h */,
+				D34EED4A25BA9A3800CD71E1 /* TUIBlackListController.m */,
+				D34EED4B25BA9A3800CD71E1 /* Cell */,
+				D34EED5E25BA9A3800CD71E1 /* TUIContactListPicker.h */,
+				D34EED5F25BA9A3800CD71E1 /* TUIContactSelectController.h */,
+				D34EED6025BA9A3800CD71E1 /* TUIGroupConversationListController.m */,
+				D34EED6125BA9A3800CD71E1 /* TUIContactController.h */,
+				D34EED6225BA9A3800CD71E1 /* TUINewFriendViewController.m */,
+				D34EED6325BA9A3800CD71E1 /* TUIBlackListController.h */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		D34EED3C25BA9A3800CD71E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED3D25BA9A3800CD71E1 /* TContactSelectViewModel.m */,
+				D34EED3E25BA9A3800CD71E1 /* TUIBlackListViewModel.h */,
+				D34EED3F25BA9A3800CD71E1 /* TUINewFriendViewModel.h */,
+				D34EED4025BA9A3800CD71E1 /* TContactViewModel.m */,
+				D34EED4125BA9A3800CD71E1 /* TUIGroupConversationListViewModel.h */,
+				D34EED4225BA9A3800CD71E1 /* TContactSelectViewModel.h */,
+				D34EED4325BA9A3800CD71E1 /* TUIBlackListViewModel.m */,
+				D34EED4425BA9A3800CD71E1 /* TUINewFriendViewModel.m */,
+				D34EED4525BA9A3800CD71E1 /* TUIGroupConversationListViewModel.m */,
+				D34EED4625BA9A3800CD71E1 /* TContactViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D34EED4B25BA9A3800CD71E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED4C25BA9A3800CD71E1 /* TContactListPickerCell.h */,
+				D34EED4D25BA9A3800CD71E1 /* TCommonPendencyCell.m */,
+				D34EED4E25BA9A3800CD71E1 /* TCommonContactCellData.h */,
+				D34EED4F25BA9A3800CD71E1 /* TUIContactActionCellData.m */,
+				D34EED5025BA9A3800CD71E1 /* TCommonContactSelectCellData.m */,
+				D34EED5125BA9A3800CD71E1 /* TCommonContactCell.m */,
+				D34EED5225BA9A3800CD71E1 /* TUIContactActionCell.m */,
+				D34EED5325BA9A3800CD71E1 /* TCommonContactSelectCell.m */,
+				D34EED5425BA9A3800CD71E1 /* TCommonPendencyCellData.h */,
+				D34EED5525BA9A3800CD71E1 /* TCommonContactCellData.m */,
+				D34EED5625BA9A3800CD71E1 /* TCommonPendencyCell.h */,
+				D34EED5725BA9A3800CD71E1 /* TContactListPickerCell.m */,
+				D34EED5825BA9A3800CD71E1 /* TUIContactActionCellData.h */,
+				D34EED5925BA9A3800CD71E1 /* TCommonContactSelectCellData.h */,
+				D34EED5A25BA9A3800CD71E1 /* TCommonPendencyCellData.m */,
+				D34EED5B25BA9A3800CD71E1 /* TCommonContactSelectCell.h */,
+				D34EED5C25BA9A3800CD71E1 /* TUIContactActionCell.h */,
+				D34EED5D25BA9A3800CD71E1 /* TCommonContactCell.h */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D34EED6425BA9A3800CD71E1 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED6525BA9A3800CD71E1 /* CellData */,
+				D34EED7C25BA9A3800CD71E1 /* Pendency */,
+				D34EED8725BA9A3800CD71E1 /* TUIFaceCell.h */,
+				D34EED8825BA9A3800CD71E1 /* CellLayout */,
+				D34EED8B25BA9A3800CD71E1 /* TUIMessageCell.h */,
+				D34EED8C25BA9A3800CD71E1 /* TUIFaceView.h */,
+				D34EED8D25BA9A3800CD71E1 /* TUIChatController.m */,
+				D34EED8E25BA9A3800CD71E1 /* TUIMoreView.h */,
+				D34EED8F25BA9A3800CD71E1 /* Input */,
+				D34EED9825BA9A3800CD71E1 /* TUIMenuCell.m */,
+				D34EED9925BA9A3800CD71E1 /* TUIMessageController.h */,
+				D34EED9A25BA9A3800CD71E1 /* TUIMenuView.m */,
+				D34EED9B25BA9A3800CD71E1 /* TUIFaceCell.m */,
+				D34EED9C25BA9A3800CD71E1 /* Cell */,
+				D34EEDB125BA9A3800CD71E1 /* Call */,
+				D34EEDD525BA9A3800CD71E1 /* TUIChatController.h */,
+				D34EEDD625BA9A3800CD71E1 /* TUIFaceView.m */,
+				D34EEDD725BA9A3800CD71E1 /* TUIMessageCell.m */,
+				D34EEDD825BA9A3800CD71E1 /* TUIMessageController.m */,
+				D34EEDD925BA9A3800CD71E1 /* TUIMenuCell.h */,
+				D34EEDDA25BA9A3800CD71E1 /* TUIMoreView.m */,
+				D34EEDDB25BA9A3800CD71E1 /* TUIMenuView.h */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		D34EED6525BA9A3800CD71E1 /* CellData */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED6625BA9A3800CD71E1 /* TUITextMessageCellData.h */,
+				D34EED6725BA9A3800CD71E1 /* TUIJoinGroupMessageCellData.h */,
+				D34EED6825BA9A3800CD71E1 /* TUIBubbleMessageCellData.h */,
+				D34EED6925BA9A3800CD71E1 /* TUIFileMessageCellData.h */,
+				D34EED6A25BA9A3800CD71E1 /* TUIGroupLiveMessageCellData.m */,
+				D34EED6B25BA9A3800CD71E1 /* TUISystemMessageCellData.h */,
+				D34EED6C25BA9A3800CD71E1 /* TUIVideoMessageCellData.h */,
+				D34EED6D25BA9A3800CD71E1 /* TUIMessageCellData.h */,
+				D34EED6E25BA9A3800CD71E1 /* TUIFaceMessageCellData.m */,
+				D34EED6F25BA9A3800CD71E1 /* TUIImageMessageCellData.h */,
+				D34EED7025BA9A3800CD71E1 /* TUIVoiceMessageCellData.h */,
+				D34EED7125BA9A3800CD71E1 /* TUIFileMessageCellData.m */,
+				D34EED7225BA9A3800CD71E1 /* TUIBubbleMessageCellData.m */,
+				D34EED7325BA9A3800CD71E1 /* TUIJoinGroupMessageCellData.m */,
+				D34EED7425BA9A3800CD71E1 /* TUITextMessageCellData.m */,
+				D34EED7525BA9A3800CD71E1 /* TUISystemMessageCellData.m */,
+				D34EED7625BA9A3800CD71E1 /* TUIGroupLiveMessageCellData.h */,
+				D34EED7725BA9A3800CD71E1 /* TUIVoiceMessageCellData.m */,
+				D34EED7825BA9A3800CD71E1 /* TUIImageMessageCellData.m */,
+				D34EED7925BA9A3800CD71E1 /* TUIFaceMessageCellData.h */,
+				D34EED7A25BA9A3800CD71E1 /* TUIMessageCellData.m */,
+				D34EED7B25BA9A3800CD71E1 /* TUIVideoMessageCellData.m */,
+			);
+			path = CellData;
+			sourceTree = "<group>";
+		};
+		D34EED7C25BA9A3800CD71E1 /* Pendency */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED7D25BA9A3800CD71E1 /* ViewModel */,
+				D34EED8225BA9A3800CD71E1 /* TUIGroupPendencyController.h */,
+				D34EED8325BA9A3800CD71E1 /* Cell */,
+				D34EED8625BA9A3800CD71E1 /* TUIGroupPendencyController.m */,
+			);
+			path = Pendency;
+			sourceTree = "<group>";
+		};
+		D34EED7D25BA9A3800CD71E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED7E25BA9A3800CD71E1 /* TUIGroupPendencyViewModel.h */,
+				D34EED7F25BA9A3800CD71E1 /* TUIGroupPendencyCellData.h */,
+				D34EED8025BA9A3800CD71E1 /* TUIGroupPendencyViewModel.m */,
+				D34EED8125BA9A3800CD71E1 /* TUIGroupPendencyCellData.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D34EED8325BA9A3800CD71E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED8425BA9A3800CD71E1 /* TUIGroupPendencyCell.h */,
+				D34EED8525BA9A3800CD71E1 /* TUIGroupPendencyCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D34EED8825BA9A3800CD71E1 /* CellLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED8925BA9A3800CD71E1 /* TUIMessageCellLayout.m */,
+				D34EED8A25BA9A3800CD71E1 /* TUIMessageCellLayout.h */,
+			);
+			path = CellLayout;
+			sourceTree = "<group>";
+		};
+		D34EED8F25BA9A3800CD71E1 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED9025BA9A3800CD71E1 /* TUIInputController.m */,
+				D34EED9125BA9A3800CD71E1 /* TUIInputMoreCell.h */,
+				D34EED9225BA9A3800CD71E1 /* TUIInputBar.m */,
+				D34EED9325BA9A3800CD71E1 /* TUIRecordView.m */,
+				D34EED9425BA9A3800CD71E1 /* TUIInputController.h */,
+				D34EED9525BA9A3800CD71E1 /* TUIInputBar.h */,
+				D34EED9625BA9A3800CD71E1 /* TUIInputMoreCell.m */,
+				D34EED9725BA9A3800CD71E1 /* TUIRecordView.h */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		D34EED9C25BA9A3800CD71E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D34EED9D25BA9A3800CD71E1 /* TUIFaceMessageCell.h */,
+				D34EED9E25BA9A3800CD71E1 /* TUIFileMessageCell.m */,
+				D34EED9F25BA9A3800CD71E1 /* TUIVideoMessageCell.m */,
+				D34EEDA025BA9A3800CD71E1 /* TUIVoiceMessageCell.h */,
+				D34EEDA125BA9A3800CD71E1 /* TUITextMessageCell.m */,
+				D34EEDA225BA9A3800CD71E1 /* TUIJoinGroupMessageCell.m */,
+				D34EEDA325BA9A3800CD71E1 /* TUISystemMessageCell.m */,
+				D34EEDA425BA9A3800CD71E1 /* TUIGroupLiveMessageCell.h */,
+				D34EEDA525BA9A3800CD71E1 /* TUIImageMessageCell.m */,
+				D34EEDA625BA9A3800CD71E1 /* TUIBubbleMessageCell.h */,
+				D34EEDA725BA9A3800CD71E1 /* TUIFileMessageCell.h */,
+				D34EEDA825BA9A3800CD71E1 /* TUIFaceMessageCell.m */,
+				D34EEDA925BA9A3800CD71E1 /* TUITextMessageCell.h */,
+				D34EEDAA25BA9A3800CD71E1 /* TUIVoiceMessageCell.m */,
+				D34EEDAB25BA9A3800CD71E1 /* TUIVideoMessageCell.h */,
+				D34EEDAC25BA9A3800CD71E1 /* TUIGroupLiveMessageCell.m */,
+				D34EEDAD25BA9A3800CD71E1 /* TUISystemMessageCell.h */,
+				D34EEDAE25BA9A3800CD71E1 /* TUIJoinGroupMessageCell.h */,
+				D34EEDAF25BA9A3800CD71E1 /* TUIBubbleMessageCell.m */,
+				D34EEDB025BA9A3800CD71E1 /* TUIImageMessageCell.h */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D34EEDB125BA9A3800CD71E1 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDB225BA9A3800CD71E1 /* UI */,
+				D34EEDC825BA9A3800CD71E1 /* TUICallManager.m */,
+				D34EEDC925BA9A3800CD71E1 /* Model */,
+				D34EEDD425BA9A3800CD71E1 /* TUICallManager.h */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		D34EEDB225BA9A3800CD71E1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDB325BA9A3800CD71E1 /* SelectMemberUI */,
+				D34EEDBA25BA9A3800CD71E1 /* VideoCallUI */,
+				D34EEDC125BA9A3800CD71E1 /* AudioCallUI */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D34EEDB325BA9A3800CD71E1 /* SelectMemberUI */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDB425BA9A3800CD71E1 /* TUISelectMemberViewController.h */,
+				D34EEDB525BA9A3800CD71E1 /* TUIMemberPanelCell.h */,
+				D34EEDB625BA9A3800CD71E1 /* TUISelectMemberCell.h */,
+				D34EEDB725BA9A3800CD71E1 /* TUIMemberPanelCell.m */,
+				D34EEDB825BA9A3800CD71E1 /* TUISelectMemberViewController.m */,
+				D34EEDB925BA9A3800CD71E1 /* TUISelectMemberCell.m */,
+			);
+			path = SelectMemberUI;
+			sourceTree = "<group>";
+		};
+		D34EEDBA25BA9A3800CD71E1 /* VideoCallUI */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDBB25BA9A3800CD71E1 /* TUIVideoCallUserCell.m */,
+				D34EEDBC25BA9A3800CD71E1 /* TUIVideoRenderView.m */,
+				D34EEDBD25BA9A3800CD71E1 /* TUIVideoCallViewController.h */,
+				D34EEDBE25BA9A3800CD71E1 /* TUIVideoCallUserCell.h */,
+				D34EEDBF25BA9A3800CD71E1 /* TUIVideoRenderView.h */,
+				D34EEDC025BA9A3800CD71E1 /* TUIVideoCallViewController.m */,
+			);
+			path = VideoCallUI;
+			sourceTree = "<group>";
+		};
+		D34EEDC125BA9A3800CD71E1 /* AudioCallUI */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDC225BA9A3800CD71E1 /* TUIAudioCallViewController.m */,
+				D34EEDC325BA9A3800CD71E1 /* TUIAudioCalledView.h */,
+				D34EEDC425BA9A3800CD71E1 /* TUIAudioCallUserCell.m */,
+				D34EEDC525BA9A3800CD71E1 /* TUIAudioCallViewController.h */,
+				D34EEDC625BA9A3800CD71E1 /* TUIAudioCallUserCell.h */,
+				D34EEDC725BA9A3800CD71E1 /* TUIAudioCalledView.m */,
+			);
+			path = AudioCallUI;
+			sourceTree = "<group>";
+		};
+		D34EEDC925BA9A3800CD71E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDCA25BA9A3800CD71E1 /* TUICall.h */,
+				D34EEDCB25BA9A3800CD71E1 /* TUICall+Signal.m */,
+				D34EEDCC25BA9A3800CD71E1 /* TUICallUtils.m */,
+				D34EEDCD25BA9A3800CD71E1 /* TUICall+TRTC.m */,
+				D34EEDCE25BA9A3800CD71E1 /* TUICallModel.h */,
+				D34EEDCF25BA9A3800CD71E1 /* TUICall+Signal.h */,
+				D34EEDD025BA9A3800CD71E1 /* TUICall.m */,
+				D34EEDD125BA9A3800CD71E1 /* TUICall+TRTC.h */,
+				D34EEDD225BA9A3800CD71E1 /* TUICallUtils.h */,
+				D34EEDD325BA9A3800CD71E1 /* TUICallModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D34EEDDC25BA9A3800CD71E1 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDDD25BA9A3800CD71E1 /* TUIGroupInfoController.m */,
+				D34EEDDE25BA9A3800CD71E1 /* TUIGroupMembersView.h */,
+				D34EEDDF25BA9A3800CD71E1 /* TUIGroupMembersCell.h */,
+				D34EEDE025BA9A3800CD71E1 /* TUIGroupMemberCell.h */,
+				D34EEDE125BA9A3800CD71E1 /* TUIGroupMemberController.h */,
+				D34EEDE225BA9A3800CD71E1 /* TUIGroupMembersView.m */,
+				D34EEDE325BA9A3800CD71E1 /* TUIGroupInfoController.h */,
+				D34EEDE425BA9A3800CD71E1 /* TUIGroupMemberCell.m */,
+				D34EEDE525BA9A3800CD71E1 /* TUIGroupMembersCell.m */,
+				D34EEDE625BA9A3800CD71E1 /* TUIGroupMemberController.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		D34EEDE725BA9A3800CD71E1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDE825BA9A3800CD71E1 /* TUIUserProfileControllerServiceProtocol.h */,
+				D34EEDE925BA9A3800CD71E1 /* TUIGroupInfoDataProviderServiceProtocol.h */,
+				D34EEDEA25BA9A3800CD71E1 /* TUIUserProfileDataProviderServiceProtocol.h */,
+				D34EEDEB25BA9A3800CD71E1 /* TUIMessageDataProviderServiceProtocol.h */,
+				D34EEDEC25BA9A3800CD71E1 /* TUIFriendProfileControllerServiceProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D34EEDED25BA9A3800CD71E1 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDEE25BA9A3800CD71E1 /* UIColor+TUIDarkMode.m */,
+				D34EEDEF25BA9A3800CD71E1 /* UIImage+TUIDarkMode.m */,
+				D34EEDF025BA9A3800CD71E1 /* UIImage+TUIDarkMode.h */,
+				D34EEDF125BA9A3800CD71E1 /* UIColor+TUIDarkMode.h */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		D34EEDF225BA9A3800CD71E1 /* Localiizable */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDF325BA9A3800CD71E1 /* NSBundle+TUIKIT.h */,
+				D34EEDF425BA9A3800CD71E1 /* NSBundle+TUIKIT.m */,
+			);
+			path = Localiizable;
+			sourceTree = "<group>";
+		};
+		D34EEDF525BA9A3800CD71E1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDF625BA9A3800CD71E1 /* TUIGroupInfoDataProviderService.m */,
+				D34EEDF725BA9A3800CD71E1 /* TUIMessageDataProviderService.h */,
+				D34EEDF825BA9A3800CD71E1 /* TUIUserProfileDataProviderService.m */,
+				D34EEDF925BA9A3800CD71E1 /* TUIUserProfileDataProviderService.h */,
+				D34EEDFA25BA9A3800CD71E1 /* TUIMessageDataProviderService.m */,
+				D34EEDFB25BA9A3800CD71E1 /* TUIGroupInfoDataProviderService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D34EEDFC25BA9A3800CD71E1 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDFD25BA9A3800CD71E1 /* TNaviBarIndicatorView.m */,
+				D34EEDFE25BA9A3800CD71E1 /* ViewModel */,
+				D34EEE0125BA9A3800CD71E1 /* CreatGroupAvatar.h */,
+				D34EEE0225BA9A3800CD71E1 /* TUIConversationListController.m */,
+				D34EEE0325BA9A3800CD71E1 /* Cell */,
+				D34EEE0825BA9A3800CD71E1 /* TNaviBarIndicatorView.h */,
+				D34EEE0925BA9A3800CD71E1 /* CreatGroupAvatar.m */,
+				D34EEE0A25BA9A3800CD71E1 /* TUIConversationListController.h */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		D34EEDFE25BA9A3800CD71E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEDFF25BA9A3800CD71E1 /* TConversationListViewModel.m */,
+				D34EEE0025BA9A3800CD71E1 /* TConversationListViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D34EEE0325BA9A3800CD71E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE0425BA9A3800CD71E1 /* TUIConversationCell.m */,
+				D34EEE0525BA9A3800CD71E1 /* TUIConversationCellData.m */,
+				D34EEE0625BA9A3800CD71E1 /* TUIConversationCell.h */,
+				D34EEE0725BA9A3800CD71E1 /* TUIConversationCellData.h */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D34EEE0C25BA9A3800CD71E1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE0D25BA9A3800CD71E1 /* Category */,
+				D34EEE1825BA9A3800CD71E1 /* Service */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D34EEE0D25BA9A3800CD71E1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE0E25BA9A3800CD71E1 /* TIMUserProfile+DataProvider.h */,
+				D34EEE0F25BA9A3800CD71E1 /* TIMGroupInfo+DataProvider.m */,
+				D34EEE1025BA9A3800CD71E1 /* TIMConversation+DataProvider.h */,
+				D34EEE1125BA9A3800CD71E1 /* TIMMessage+DataProvider.h */,
+				D34EEE1225BA9A3800CD71E1 /* NSString+DataProvider.h */,
+				D34EEE1325BA9A3800CD71E1 /* TIMConversation+DataProvider.m */,
+				D34EEE1425BA9A3800CD71E1 /* TIMGroupInfo+DataProvider.h */,
+				D34EEE1525BA9A3800CD71E1 /* TIMUserProfile+DataProvider.m */,
+				D34EEE1625BA9A3800CD71E1 /* NSString+DataProvider.m */,
+				D34EEE1725BA9A3800CD71E1 /* TIMMessage+DataProvider.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D34EEE1825BA9A3800CD71E1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE1925BA9A3800CD71E1 /* TCContext.m */,
+				D34EEE1A25BA9A3800CD71E1 /* TCServiceManager.m */,
+				D34EEE1B25BA9A3800CD71E1 /* TCServiceProtocol.h */,
+				D34EEE1C25BA9A3800CD71E1 /* TCAnnotation.m */,
+				D34EEE1D25BA9A3800CD71E1 /* TCServiceManager.h */,
+				D34EEE1E25BA9A3800CD71E1 /* TCContext.h */,
+				D34EEE1F25BA9A3800CD71E1 /* TCAnnotation.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D34EEE2025BA9A3800CD71E1 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE2125BA9A3800CD71E1 /* voiceConvert */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		D34EEE2125BA9A3800CD71E1 /* voiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE2225BA9A3800CD71E1 /* opencore-amrwb */,
+				D34EEE2625BA9A3800CD71E1 /* EMVoiceConverter.h */,
+				D34EEE2725BA9A3800CD71E1 /* opencore-amrnb */,
+				D34EEE2B25BA9A3800CD71E1 /* amrwapper */,
+				D34EEE2E25BA9A3800CD71E1 /* EMVoiceConverter.mm */,
+			);
+			path = voiceConvert;
+			sourceTree = "<group>";
+		};
+		D34EEE2225BA9A3800CD71E1 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE2325BA9A3800CD71E1 /* libopencore-amrwb.a */,
+				D34EEE2425BA9A3800CD71E1 /* if_rom.h */,
+				D34EEE2525BA9A3800CD71E1 /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		D34EEE2725BA9A3800CD71E1 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE2825BA9A3800CD71E1 /* interf_dec.h */,
+				D34EEE2925BA9A3800CD71E1 /* libopencore-amrnb.a */,
+				D34EEE2A25BA9A3800CD71E1 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		D34EEE2B25BA9A3800CD71E1 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE2C25BA9A3800CD71E1 /* amrFileCodec.mm */,
+				D34EEE2D25BA9A3800CD71E1 /* amrFileCodec.h */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		D34EEE3025BA9A3800CD71E1 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D34EEE3125BA9A3800CD71E1 /* TUIKitConfig.h */,
+				D34EEE3225BA9A3800CD71E1 /* TUIError.m */,
+				D34EEE3325BA9A3800CD71E1 /* TUIImageCache.m */,
+				D34EEE3425BA9A3800CD71E1 /* TUIKitConfig.m */,
+				D34EEE3525BA9A3800CD71E1 /* TUIError.h */,
+				D34EEE3625BA9A3800CD71E1 /* TUIImageCache.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D30E9F4D25BA990E00A91C48 /* TUIKit_MELOINFO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30E9F7625BA991200A91C48 /* Build configuration list for PBXNativeTarget "TUIKit_MELOINFO" */;
+			buildPhases = (
+				925817CB4FAE6EA722D98200 /* [CP] Check Pods Manifest.lock */,
+				D30E9F4A25BA990E00A91C48 /* Sources */,
+				D30E9F4B25BA990E00A91C48 /* Frameworks */,
+				D30E9F4C25BA990E00A91C48 /* Resources */,
+				6728396CD6F6658334F960F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TUIKit_MELOINFO;
+			productName = TUIKit_MELOINFO;
+			productReference = D30E9F4E25BA990E00A91C48 /* TUIKit_MELOINFO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D30E9F6125BA991200A91C48 /* TUIKit_MELOINFOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30E9F7925BA991200A91C48 /* Build configuration list for PBXNativeTarget "TUIKit_MELOINFOTests" */;
+			buildPhases = (
+				E772B76600B98628F8E50A58 /* [CP] Check Pods Manifest.lock */,
+				D30E9F5E25BA991200A91C48 /* Sources */,
+				D30E9F5F25BA991200A91C48 /* Frameworks */,
+				D30E9F6025BA991200A91C48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30E9F6425BA991200A91C48 /* PBXTargetDependency */,
+			);
+			name = TUIKit_MELOINFOTests;
+			productName = TUIKit_MELOINFOTests;
+			productReference = D30E9F6225BA991200A91C48 /* TUIKit_MELOINFOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D30E9F6C25BA991200A91C48 /* TUIKit_MELOINFOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30E9F7C25BA991200A91C48 /* Build configuration list for PBXNativeTarget "TUIKit_MELOINFOUITests" */;
+			buildPhases = (
+				E655396691A741A110808091 /* [CP] Check Pods Manifest.lock */,
+				D30E9F6925BA991200A91C48 /* Sources */,
+				D30E9F6A25BA991200A91C48 /* Frameworks */,
+				D30E9F6B25BA991200A91C48 /* Resources */,
+				280B7DCE6E80C256A6E8B0EE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30E9F6F25BA991200A91C48 /* PBXTargetDependency */,
+			);
+			name = TUIKit_MELOINFOUITests;
+			productName = TUIKit_MELOINFOUITests;
+			productReference = D30E9F6D25BA991200A91C48 /* TUIKit_MELOINFOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D30E9F4625BA990E00A91C48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D30E9F4D25BA990E00A91C48 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					D30E9F6125BA991200A91C48 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D30E9F4D25BA990E00A91C48;
+					};
+					D30E9F6C25BA991200A91C48 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D30E9F4D25BA990E00A91C48;
+					};
+				};
+			};
+			buildConfigurationList = D30E9F4925BA990E00A91C48 /* Build configuration list for PBXProject "TUIKit_MELOINFO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = D30E9F4525BA990E00A91C48;
+			productRefGroup = D30E9F4F25BA990E00A91C48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D30E9F4D25BA990E00A91C48 /* TUIKit_MELOINFO */,
+				D30E9F6125BA991200A91C48 /* TUIKit_MELOINFOTests */,
+				D30E9F6C25BA991200A91C48 /* TUIKit_MELOINFOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D30E9F4C25BA990E00A91C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34EEE3925BA9A3800CD71E1 /* Localizable.strings in Resources */,
+				D34EEE3725BA9A3800CD71E1 /* TUIKitResource.bundle in Resources */,
+				D30E9F5725BA991100A91C48 /* Assets.xcassets in Resources */,
+				D34EEE3825BA9A3800CD71E1 /* TUIKitFace.bundle in Resources */,
+				D30E9F5A25BA991100A91C48 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30E9F6025BA991200A91C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30E9F6B25BA991200A91C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		280B7DCE6E80C256A6E8B0EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6728396CD6F6658334F960F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TUIKit_MELOINFO/Pods-TUIKit_MELOINFO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TUIKit_MELOINFO/Pods-TUIKit_MELOINFO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TUIKit_MELOINFO/Pods-TUIKit_MELOINFO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		925817CB4FAE6EA722D98200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TUIKit_MELOINFO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E655396691A741A110808091 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E772B76600B98628F8E50A58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TUIKit_MELOINFOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D30E9F4A25BA990E00A91C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34EEE9325BA9A3800CD71E1 /* TUIAudioCallUserCell.m in Sources */,
+				D34EEE5725BA9A3800CD71E1 /* TContactSelectViewModel.m in Sources */,
+				D34EEE4825BA9A3800CD71E1 /* TResponderTextView.m in Sources */,
+				D30E9F5D25BA991100A91C48 /* main.m in Sources */,
+				D34EEE8E25BA9A3800CD71E1 /* TUISelectMemberCell.m in Sources */,
+				D34EEE4025BA9A3800CD71E1 /* TUIFileViewController.m in Sources */,
+				D34EEE7325BA9A3800CD71E1 /* TUIMessageCellData.m in Sources */,
+				D34EEEA525BA9A3800CD71E1 /* UIImage+TUIDarkMode.m in Sources */,
+				D34EEE7525BA9A3800CD71E1 /* TUIGroupPendencyViewModel.m in Sources */,
+				D34EEE8525BA9A3800CD71E1 /* TUIJoinGroupMessageCell.m in Sources */,
+				D34EEE3C25BA9A3800CD71E1 /* TUnReadView.m in Sources */,
+				D34EEE5825BA9A3800CD71E1 /* TContactViewModel.m in Sources */,
+				D34EEE4F25BA9A3800CD71E1 /* TAddHelper.m in Sources */,
+				D34EEE6B25BA9A3800CD71E1 /* TUIFaceMessageCellData.m in Sources */,
+				D34EEEB425BA9A3800CD71E1 /* NSString+DataProvider.m in Sources */,
+				D34EEE9425BA9A3800CD71E1 /* TUIAudioCalledView.m in Sources */,
+				D34EEE8D25BA9A3800CD71E1 /* TUISelectMemberViewController.m in Sources */,
+				D34EEEBD25BA9A3800CD71E1 /* TUIError.m in Sources */,
+				D34EEEB225BA9A3800CD71E1 /* TIMConversation+DataProvider.m in Sources */,
+				D34EEE6A25BA9A3800CD71E1 /* TUIGroupLiveMessageCellData.m in Sources */,
+				D34EEE8125BA9A3800CD71E1 /* TUIFaceCell.m in Sources */,
+				D34EEE4C25BA9A3800CD71E1 /* TCommonSwitchCell.m in Sources */,
+				D34EEE9D25BA9A3800CD71E1 /* TUIMessageController.m in Sources */,
+				D34EEE7D25BA9A3800CD71E1 /* TUIRecordView.m in Sources */,
+				D34EEEAA25BA9A3800CD71E1 /* TNaviBarIndicatorView.m in Sources */,
+				D34EEE8A25BA9A3800CD71E1 /* TUIGroupLiveMessageCell.m in Sources */,
+				D34EEEB125BA9A3800CD71E1 /* TIMGroupInfo+DataProvider.m in Sources */,
+				D34EEE3F25BA9A3800CD71E1 /* TAddCell.m in Sources */,
+				D34EEE4525BA9A3800CD71E1 /* TUIAvatarViewController.m in Sources */,
+				D34EEE4625BA9A3800CD71E1 /* TUIImageViewController.m in Sources */,
+				D34EEE6825BA9A3800CD71E1 /* TUIGroupConversationListController.m in Sources */,
+				D34EEE5F25BA9A3800CD71E1 /* TCommonPendencyCell.m in Sources */,
+				D34EEE4D25BA9A3800CD71E1 /* TCommonAvatarCell.m in Sources */,
+				D34EEEB625BA9A3800CD71E1 /* TCContext.m in Sources */,
+				D34EEEA625BA9A3800CD71E1 /* NSBundle+TUIKIT.m in Sources */,
+				D34EEEAC25BA9A3800CD71E1 /* TUIConversationListController.m in Sources */,
+				D34EEE4725BA9A3800CD71E1 /* TScrollView.m in Sources */,
+				D34EEE6F25BA9A3800CD71E1 /* TUITextMessageCellData.m in Sources */,
+				D34EEEAD25BA9A3800CD71E1 /* TUIConversationCell.m in Sources */,
+				D34EEE5925BA9A3800CD71E1 /* TUIBlackListViewModel.m in Sources */,
+				D34EEE4B25BA9A3800CD71E1 /* TUIButtonCell.m in Sources */,
+				D34EEEB525BA9A3800CD71E1 /* TIMMessage+DataProvider.m in Sources */,
+				D34EEEBC25BA9A3800CD71E1 /* EMVoiceConverter.mm in Sources */,
+				D34EEE3D25BA9A3800CD71E1 /* TUILocalStorage.m in Sources */,
+				D34EEE7625BA9A3800CD71E1 /* TUIGroupPendencyCellData.m in Sources */,
+				D34EEE6725BA9A3800CD71E1 /* TCommonPendencyCellData.m in Sources */,
+				D34EEE6025BA9A3800CD71E1 /* TUIContactActionCellData.m in Sources */,
+				D34EEEA425BA9A3800CD71E1 /* UIColor+TUIDarkMode.m in Sources */,
+				D34EEE7A25BA9A3800CD71E1 /* TUIChatController.m in Sources */,
+				D34EEEAE25BA9A3800CD71E1 /* TUIConversationCellData.m in Sources */,
+				D34EEE3A25BA9A3800CD71E1 /* NSString+TUICommon.m in Sources */,
+				D34EEE3E25BA9A3800CD71E1 /* THelper.m in Sources */,
+				D34EEE4E25BA9A3800CD71E1 /* TCommonCell.m in Sources */,
+				D34EEE5125BA9A3800CD71E1 /* NSDate+TUIKIT.m in Sources */,
+				D34EEE4325BA9A3800CD71E1 /* TTextEditController.m in Sources */,
+				D34EEE5625BA9A3800CD71E1 /* TUIContactSelectController.m in Sources */,
+				D34EEE4925BA9A3800CD71E1 /* TUIProfileCardCell.m in Sources */,
+				D34EEE8C25BA9A3800CD71E1 /* TUIMemberPanelCell.m in Sources */,
+				D34EEE5225BA9A3800CD71E1 /* UIImage+TUIKIT.m in Sources */,
+				D34EEE5325BA9A3800CD71E1 /* TPopCell.m in Sources */,
+				D34EEE8B25BA9A3800CD71E1 /* TUIBubbleMessageCell.m in Sources */,
+				D34EEE9025BA9A3800CD71E1 /* TUIVideoRenderView.m in Sources */,
+				D34EEE5525BA9A3800CD71E1 /* TPopView.m in Sources */,
+				D34EEE7B25BA9A3800CD71E1 /* TUIInputController.m in Sources */,
+				D34EEE7F25BA9A3800CD71E1 /* TUIMenuCell.m in Sources */,
+				D34EEE8825BA9A3800CD71E1 /* TUIFaceMessageCell.m in Sources */,
+				D34EEE6225BA9A3800CD71E1 /* TCommonContactCell.m in Sources */,
+				D34EEE9525BA9A3800CD71E1 /* TUICallManager.m in Sources */,
+				D30E9F5325BA990E00A91C48 /* AppDelegate.m in Sources */,
+				D34EEE7725BA9A3800CD71E1 /* TUIGroupPendencyCell.m in Sources */,
+				D34EEE7825BA9A3800CD71E1 /* TUIGroupPendencyController.m in Sources */,
+				D34EEEB325BA9A3800CD71E1 /* TIMUserProfile+DataProvider.m in Sources */,
+				D34EEEAF25BA9A3800CD71E1 /* CreatGroupAvatar.m in Sources */,
+				D34EEEBF25BA9A3800CD71E1 /* TUIKitConfig.m in Sources */,
+				D34EEE5A25BA9A3800CD71E1 /* TUINewFriendViewModel.m in Sources */,
+				D34EEEAB25BA9A3800CD71E1 /* TConversationListViewModel.m in Sources */,
+				D34EEE9225BA9A3800CD71E1 /* TUIAudioCallViewController.m in Sources */,
+				D34EEEB825BA9A3800CD71E1 /* TCAnnotation.m in Sources */,
+				D34EEE8325BA9A3800CD71E1 /* TUIVideoMessageCell.m in Sources */,
+				D34EEE6125BA9A3800CD71E1 /* TCommonContactSelectCellData.m in Sources */,
+				D34EEE5B25BA9A3800CD71E1 /* TUIGroupConversationListViewModel.m in Sources */,
+				D34EEEA925BA9A3800CD71E1 /* TUIMessageDataProviderService.m in Sources */,
+				D34EEE6325BA9A3800CD71E1 /* TUIContactActionCell.m in Sources */,
+				D34EEE7125BA9A3800CD71E1 /* TUIVoiceMessageCellData.m in Sources */,
+				D34EEEB725BA9A3800CD71E1 /* TCServiceManager.m in Sources */,
+				D34EEE9625BA9A3800CD71E1 /* TUICall+Signal.m in Sources */,
+				D34EEEA825BA9A3800CD71E1 /* TUIUserProfileDataProviderService.m in Sources */,
+				D34EEE7E25BA9A3800CD71E1 /* TUIInputMoreCell.m in Sources */,
+				D34EEE9F25BA9A3800CD71E1 /* TUIGroupInfoController.m in Sources */,
+				D34EEE6525BA9A3800CD71E1 /* TCommonContactCellData.m in Sources */,
+				D34EEE7225BA9A3800CD71E1 /* TUIImageMessageCellData.m in Sources */,
+				D34EEE8F25BA9A3800CD71E1 /* TUIVideoCallUserCell.m in Sources */,
+				D34EEEBE25BA9A3800CD71E1 /* TUIImageCache.m in Sources */,
+				D34EEE5C25BA9A3800CD71E1 /* TUIContactListPicker.m in Sources */,
+				D34EEE4125BA9A3800CD71E1 /* TNavigationController.m in Sources */,
+				D34EEE6425BA9A3800CD71E1 /* TCommonContactSelectCell.m in Sources */,
+				D34EEE8725BA9A3800CD71E1 /* TUIImageMessageCell.m in Sources */,
+				D34EEE9725BA9A3800CD71E1 /* TUICallUtils.m in Sources */,
+				D34EEE5E25BA9A3800CD71E1 /* TUIBlackListController.m in Sources */,
+				D34EEE7025BA9A3800CD71E1 /* TUISystemMessageCellData.m in Sources */,
+				D34EEE3B25BA9A3800CD71E1 /* TModifyView.m in Sources */,
+				D34EEE8925BA9A3800CD71E1 /* TUIVoiceMessageCell.m in Sources */,
+				D34EEE6925BA9A3800CD71E1 /* TUINewFriendViewController.m in Sources */,
+				D34EEE9E25BA9A3800CD71E1 /* TUIMoreView.m in Sources */,
+				D34EEE9825BA9A3800CD71E1 /* TUICall+TRTC.m in Sources */,
+				D34EEE8225BA9A3800CD71E1 /* TUIFileMessageCell.m in Sources */,
+				D34EEE7C25BA9A3800CD71E1 /* TUIInputBar.m in Sources */,
+				D34EEE7425BA9A3800CD71E1 /* TUIVideoMessageCellData.m in Sources */,
+				D34EEE9925BA9A3800CD71E1 /* TUICall.m in Sources */,
+				D34EEE5025BA9A3800CD71E1 /* TUITabBarController.m in Sources */,
+				D34EEEA225BA9A3800CD71E1 /* TUIGroupMembersCell.m in Sources */,
+				D34EEE9B25BA9A3800CD71E1 /* TUIFaceView.m in Sources */,
+				D34EEE6D25BA9A3800CD71E1 /* TUIBubbleMessageCellData.m in Sources */,
+				D34EEEBB25BA9A3800CD71E1 /* amrFileCodec.mm in Sources */,
+				D34EEE5D25BA9A3800CD71E1 /* TUIContactController.m in Sources */,
+				D34EEE4425BA9A3800CD71E1 /* TDateEditController.m in Sources */,
+				D34EEEA325BA9A3800CD71E1 /* TUIGroupMemberController.m in Sources */,
+				D34EEE9A25BA9A3800CD71E1 /* TUICallModel.m in Sources */,
+				D34EEE9125BA9A3800CD71E1 /* TUIVideoCallViewController.m in Sources */,
+				D34EEE4A25BA9A3800CD71E1 /* TCommonTextCell.m in Sources */,
+				D34EEE5425BA9A3800CD71E1 /* TAddCollectionCell.m in Sources */,
+				D34EEE8025BA9A3800CD71E1 /* TUIMenuView.m in Sources */,
+				D34EEE8425BA9A3800CD71E1 /* TUITextMessageCell.m in Sources */,
+				D34EEE6C25BA9A3800CD71E1 /* TUIFileMessageCellData.m in Sources */,
+				D34EEEA725BA9A3800CD71E1 /* TUIGroupInfoDataProviderService.m in Sources */,
+				D34EEEA025BA9A3800CD71E1 /* TUIGroupMembersView.m in Sources */,
+				D34EEE6625BA9A3800CD71E1 /* TContactListPickerCell.m in Sources */,
+				D34EEE6E25BA9A3800CD71E1 /* TUIJoinGroupMessageCellData.m in Sources */,
+				D34EEE8625BA9A3800CD71E1 /* TUISystemMessageCell.m in Sources */,
+				D34EEEA125BA9A3800CD71E1 /* TUIGroupMemberCell.m in Sources */,
+				D34EEEB025BA9A3800CD71E1 /* TUIKit.m in Sources */,
+				D34EEE7925BA9A3800CD71E1 /* TUIMessageCellLayout.m in Sources */,
+				D34EEE9C25BA9A3800CD71E1 /* TUIMessageCell.m in Sources */,
+				D34EEE4225BA9A3800CD71E1 /* TUIVideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30E9F5E25BA991200A91C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30E9F6725BA991200A91C48 /* TUIKit_MELOINFOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30E9F6925BA991200A91C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30E9F7225BA991200A91C48 /* TUIKit_MELOINFOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D30E9F6425BA991200A91C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30E9F4D25BA990E00A91C48 /* TUIKit_MELOINFO */;
+			targetProxy = D30E9F6325BA991200A91C48 /* PBXContainerItemProxy */;
+		};
+		D30E9F6F25BA991200A91C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D30E9F4D25BA990E00A91C48 /* TUIKit_MELOINFO */;
+			targetProxy = D30E9F6E25BA991200A91C48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D30E9F5825BA991100A91C48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30E9F5925BA991100A91C48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D34EECF825BA9A3700CD71E1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34EECF925BA9A3700CD71E1 /* zh-Hans */,
+				D34EECFA25BA9A3700CD71E1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D30E9F7425BA991200A91C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D30E9F7525BA991200A91C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D30E9F7725BA991200A91C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056D651D0DEA42D3432EE83D /* Pods-TUIKit_MELOINFO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWP5S89664;
+				INFOPLIST_FILE = TUIKit_MELOINFO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meloinfo.TUIKit-MELOINFO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D30E9F7825BA991200A91C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5931FB1208B39E47A69F015 /* Pods-TUIKit_MELOINFO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWP5S89664;
+				INFOPLIST_FILE = TUIKit_MELOINFO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/TUIKit_MELOINFO/Classes/Third/voiceConvert/opencore-amrnb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meloinfo.TUIKit-MELOINFO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D30E9F7A25BA991200A91C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C5E1676FE15A231CA2ECFB /* Pods-TUIKit_MELOINFOTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWP5S89664;
+				INFOPLIST_FILE = TUIKit_MELOINFOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meloinfo.TUIKit-MELOINFOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUIKit_MELOINFO.app/TUIKit_MELOINFO";
+			};
+			name = Debug;
+		};
+		D30E9F7B25BA991200A91C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B6943BE2FA15ECFA6D39C89 /* Pods-TUIKit_MELOINFOTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWP5S89664;
+				INFOPLIST_FILE = TUIKit_MELOINFOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meloinfo.TUIKit-MELOINFOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUIKit_MELOINFO.app/TUIKit_MELOINFO";
+			};
+			name = Release;
+		};
+		D30E9F7D25BA991200A91C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A8D74ECDAE4BFAF2961D02 /* Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWP5S89664;
+				INFOPLIST_FILE = TUIKit_MELOINFOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meloinfo.TUIKit-MELOINFOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TUIKit_MELOINFO;
+			};
+			name = Debug;
+		};
+		D30E9F7E25BA991200A91C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB915EA523F60499C663EC60 /* Pods-TUIKit_MELOINFO-TUIKit_MELOINFOUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWP5S89664;
+				INFOPLIST_FILE = TUIKit_MELOINFOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meloinfo.TUIKit-MELOINFOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TUIKit_MELOINFO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D30E9F4925BA990E00A91C48 /* Build configuration list for PBXProject "TUIKit_MELOINFO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30E9F7425BA991200A91C48 /* Debug */,
+				D30E9F7525BA991200A91C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30E9F7625BA991200A91C48 /* Build configuration list for PBXNativeTarget "TUIKit_MELOINFO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30E9F7725BA991200A91C48 /* Debug */,
+				D30E9F7825BA991200A91C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30E9F7925BA991200A91C48 /* Build configuration list for PBXNativeTarget "TUIKit_MELOINFOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30E9F7A25BA991200A91C48 /* Debug */,
+				D30E9F7B25BA991200A91C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30E9F7C25BA991200A91C48 /* Build configuration list for PBXNativeTarget "TUIKit_MELOINFOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30E9F7D25BA991200A91C48 /* Debug */,
+				D30E9F7E25BA991200A91C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D30E9F4625BA990E00A91C48 /* Project object */;
+}
