@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.requires_arc = true
   s.source       = { :git => "https://github.com/KerwinLan/TUIKit_MELOINFO.git", :tag => "#{s.version}" }
-  s.default_subspec = 'Core'
+  s.default_subspec = "Core"
   s.xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
   s.libraries = "stdc++"
   s.pod_target_xcconfig = {
@@ -34,6 +34,12 @@ Pod::Spec.new do |s|
         "TUIKit_MELOINFO/Resources/Localizable/*"
       ]
     }
+    core.dependency "TXIMSDK_iOS", "5.1.21"
+    core.dependency "Toast", "4.0.0"
+    core.dependency "ReactiveObjC", "3.1.1"
+    core.dependency "SDWebImage", "5.9.0"
+    core.dependency "MMLayout", "0.2.0"
+    core.dependency "TXLiteAVSDK_TRTC", "7.8.9519"
   end
 
 end
