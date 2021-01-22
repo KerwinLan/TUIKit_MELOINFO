@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TUIKit_MELOINFO"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "腾讯TUIKit5.1.2修改版本"
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -21,6 +21,7 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
+  s.static_framework = true
   
   s.subspec 'Core' do |core|
     core.source_files  = "**/TUIKit_MELOINFO/Classes/*.{h,m,mm}"
