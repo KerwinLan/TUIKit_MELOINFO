@@ -108,7 +108,11 @@
  当前发送消息离线push内容设置
  */
 - (V2TIMOfflinePushInfo *)messageController:(TUIMessageController *)controller onMakeOfflinePushInfo:(TUIMessageCellData *)cellData;
+
+- (void)messageController:(TUIMessageController *)messageController willSendMessage:(TUIMessageCellData *)cellData completionHandler:(void(^)(BOOL allow))handler;
+
 @end
+
 
 /////////////////////////////////////////////////////////////////////////////////
 //
