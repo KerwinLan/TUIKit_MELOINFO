@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TUIKit_MELOINFO"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "腾讯TUIKit5.1.2修改版本"
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -44,6 +44,7 @@ TODO: Add long description of the pod here.
     core.dependency "SDWebImage", "5.9.0"
     core.dependency "MMLayout", "0.2.0"
     core.dependency "TXLiteAVSDK_TRTC", "7.8.9519"
+    core.dependency "Masonry", "1.1.0"
   end
 
 end

@@ -129,6 +129,7 @@
 @interface TUIMessageController : UITableViewController
 
 @property (nonatomic, copy) NSSet<NSString *> *allowHandleClickCellList;
+@property (nonatomic, strong) NSMutableArray<TUIMessageCellData *> *uiMsgs;
 
 /**
  *  执行 TMessageControllerDelegate 协议的委托

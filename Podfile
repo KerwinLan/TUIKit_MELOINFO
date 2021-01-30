@@ -10,6 +10,7 @@ target 'TUIKit_MELOINFO' do
   pod 'SDWebImage', '~> 5.9.0'
   pod 'MMLayout', '~> 0.2.0'
   pod 'TXLiteAVSDK_TRTC', '7.8.9519'
+  pod 'Masonry', '~> 1.1.0'
   # Pods for TUIKit_MELOINFO
 
   target 'TUIKit_MELOINFOTests' do

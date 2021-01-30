@@ -42,7 +42,6 @@
 
 @interface TUIMessageController () <TMessageCellDelegate>
 @property (nonatomic, strong) TUIConversationCellData *conversationData;
-@property (nonatomic, strong) NSMutableArray *uiMsgs;
 @property (nonatomic, strong) NSMutableArray *heightCache;
 @property (nonatomic, strong) V2TIMMessage *msgForDate;
 @property (nonatomic, strong) V2TIMMessage *msgForGet;
@@ -485,33 +484,40 @@
         NSLog(@"Unknown message state");
         return;
     }
-    V2TIMOfflinePushInfo *info;
-    if (self.delegate && [self.delegate respondsToSelector:@selector(messageController:onMakeOfflinePushInfo:)]) {
-        info = [self.delegate messageController:self onMakeOfflinePushInfo:msg];
-    }
-    if (!info) {
-        // 设置推送
-        info = [[V2TIMOfflinePushInfo alloc] init];
-        int chatType = 0;
-        NSString *sender = @"";
-        if (self.conversationData.groupID.length > 0) {
-            chatType = 2;
-            sender = self.conversationData.groupID;
-        } else {
-            chatType = 1;
-            NSString *loginUser = [[V2TIMManager sharedInstance] getLoginUser];
-            if (loginUser.length > 0) {
-                sender = loginUser;
-            }
-        }
-        NSDictionary *extParam = @{@"entity":@{@"action":@(APNs_Business_NormalMsg),@"chatType":@(chatType),@"sender":sender,@"version":@(APNs_Version)}};
-        info.ext = [TUICallUtils dictionary2JsonStr:extParam];
-    }
+   
     // 发消息
     @weakify(self)
     void(^completionHandler)(BOOL) = ^(BOOL allow) {
         @strongify(self);
-        [[V2TIMManager sharedInstance] sendMessage:imMsg receiver:self.conversationData.userID groupID:self.conversationData.groupID priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
+        if (!allow) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self changeMsg:msg status:Msg_Status_Fail];
+            });
+            return;
+        }
+        V2TIMOfflinePushInfo *info;
+        if (self.delegate && [self.delegate respondsToSelector:@selector(messageController:onMakeOfflinePushInfo:)]) {
+            info = [self.delegate messageController:self onMakeOfflinePushInfo:msg];
+        }
+        if (!info) {
+            // 设置推送
+            info = [[V2TIMOfflinePushInfo alloc] init];
+            int chatType = 0;
+            NSString *sender = @"";
+            if (self.conversationData.groupID.length > 0) {
+                chatType = 2;
+                sender = self.conversationData.groupID;
+            } else {
+                chatType = 1;
+                NSString *loginUser = [[V2TIMManager sharedInstance] getLoginUser];
+                if (loginUser.length > 0) {
+                    sender = loginUser;
+                }
+            }
+            NSDictionary *extParam = @{@"entity":@{@"action":@(APNs_Business_NormalMsg),@"chatType":@(chatType),@"sender":sender,@"version":@(APNs_Version)}};
+            info.ext = [TUICallUtils dictionary2JsonStr:extParam];
+        }
+        [[V2TIMManager sharedInstance] sendMessage:imMsg ?: msg.innerMessage receiver:self.conversationData.userID groupID:self.conversationData.groupID priority:V2TIM_PRIORITY_DEFAULT onlineUserOnly:NO offlinePushInfo:info progress:^(uint32_t progress) {
             @strongify(self)
             for (TUIMessageCellData *uiMsg in self.uiMsgs) {
                 if ([uiMsg.innerMessage.msgID isEqualToString:imMsg.msgID]) {
@@ -552,8 +558,12 @@
     
     // 展示 UI 界面
     msg.status = Msg_Status_Sending;
-    msg.name = [msg.innerMessage getShowName];
-    msg.avatarUrl = [NSURL URLWithString:[msg.innerMessage faceURL]];
+    if (!msg.name) {
+        msg.name = [msg.innerMessage getShowName];
+    }
+    if (!msg.avatarUrl) {
+        msg.avatarUrl = [NSURL URLWithString:[msg.innerMessage faceURL]];
+    }
     if(dateMsg){
         _msgForDate = imMsg;
         [_uiMsgs addObject:dateMsg];

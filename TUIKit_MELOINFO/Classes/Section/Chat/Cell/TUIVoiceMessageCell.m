@@ -10,6 +10,7 @@
 #import "TUIKit.h"
 #import "MMLayout/UIView+MMLayout.h"
 #import "ReactiveObjC/ReactiveObjC.h"
+#import "Masonry/Masonry.h"
 
 
 @implementation TUIVoiceMessageCell
@@ -23,15 +24,14 @@
         [self.bubbleView addSubview:_voice];
 
         _duration = [[UILabel alloc] init];
-        _duration.font = [UIFont systemFontOfSize:12];
-        _duration.textColor = [UIColor grayColor];
+        _duration.font = [UIFont systemFontOfSize:16];
+        _duration.textColor = [UIColor blackColor];
         [self.bubbleView addSubview:_duration];
 
         _voiceReadPoint = [[UIImageView alloc] init];
         _voiceReadPoint.backgroundColor = [UIColor redColor];
-        _voiceReadPoint.frame = CGRectMake(0, 0, 5, 5);
         _voiceReadPoint.hidden = YES;
-        [_voiceReadPoint.layer setCornerRadius:_voiceReadPoint.frame.size.width/2];
+        [_voiceReadPoint.layer setCornerRadius:4];
         [_voiceReadPoint.layer setMasksToBounds:YES];
         [self.bubbleView addSubview:_voiceReadPoint];
     }
@@ -78,20 +78,32 @@
 {
     [super layoutSubviews];
     
-    self.duration.mm_sizeToFitThan(10,TVoiceMessageCell_Duration_Size.height).mm__centerY(self.bubbleView.mm_h/2 - 1);
     
-    self.voice.mm_sizeToFit().mm_top(self.voiceData.voiceTop);
     
     if (self.voiceData.direction == MsgDirectionOutgoing) {
-        self.bubbleView.mm_left(self.duration.mm_w).mm_flexToRight(0);
-        self.duration.mm_left(-self.duration.mm_w);
-        self.voice.mm_right(self.voiceData.cellLayout.bubbleInsets.right);
         self.voiceReadPoint.hidden = YES;
+        [self.voice mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.bubbleView).with.offset(self.voiceData.voiceTop);
+            make.right.equalTo(self.bubbleView).with.offset(-15);
+        }];
+        [self.duration mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.voice);
+            make.right.equalTo(self.voice.mas_left).with.offset(-8);
+        }];
     } else {
-        self.bubbleView.mm_left(0).mm_flexToRight(self.duration.mm_w);
-        self.duration.mm_right(-self.duration.mm_w);
-        self.voice.mm_left(self.voiceData.cellLayout.bubbleInsets.left);
-        self.voiceReadPoint.mm_bottom(self.duration.mm_y + self.duration.mm_h).mm_left(self.duration.mm_x);
+        [self.voice mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.bubbleView).with.offset(self.voiceData.voiceTop);
+            make.left.equalTo(self.bubbleView).with.offset(15);
+        }];
+        [self.duration mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.voice);
+            make.left.equalTo(self.voice.mas_right).with.offset(8);
+        }];
+        [self.voiceReadPoint mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self.bubbleView.mas_right).with.offset(-4);
+            make.centerY.equalTo(self.bubbleView.mas_top).with.offset(4);
+            make.width.and.height.mas_equalTo(8);
+        }];
     }
 }
 
