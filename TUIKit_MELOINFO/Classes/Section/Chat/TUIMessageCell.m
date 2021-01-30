@@ -30,6 +30,8 @@
         //head
         _avatarView = [[UIImageView alloc] init];
         _avatarView.contentMode = UIViewContentModeScaleAspectFill;
+        _avatarView.backgroundColor = UIColor.grayColor;
+        _avatarView.clipsToBounds = YES;
         [self.contentView addSubview:_avatarView];
         UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onSelectMessageAvatar:)];
         [_avatarView addGestureRecognizer:tap1];
@@ -80,11 +82,11 @@
     [super fillWithData:data];
     self.messageData = data;
 
-    [self.avatarView setImage:data.avatarImage];
+    [self.avatarView sd_setImageWithURL:data.avatarUrl];
     @weakify(self)
     [[[RACObserve(data, avatarUrl) takeUntil:self.rac_prepareForReuseSignal] ignore:nil] subscribeNext:^(NSURL *url) {
         @strongify(self)
-        [self.avatarView sd_setImageWithURL:url placeholderImage:self.messageData.avatarImage];
+        [self.avatarView sd_setImageWithURL:url];
     }];
 
 
