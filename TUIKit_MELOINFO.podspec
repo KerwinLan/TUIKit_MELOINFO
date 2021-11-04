@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
         "TUIKit_MELOINFO/Resources/Localizable/*"
       ]
     }
-    core.dependency "TXIMSDK_iOS", "5.1.21"
+    core.dependency "TXIMSDK_iOS", "5.1.60"
     core.dependency "Toast", "4.0.0"
     core.dependency "ReactiveObjC", "3.1.1"
     core.dependency "SDWebImage", "5.9.0"

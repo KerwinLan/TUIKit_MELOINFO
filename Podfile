@@ -4,7 +4,7 @@
 target 'TUIKit_MELOINFO' do
   # Comment the next line if you don't want to use dynamic frameworks
  # use_frameworks!
-  pod 'TXIMSDK_iOS'
+  pod 'TXIMSDK_iOS', '~> 5.1.60'
   pod 'Toast', '~> 4.0.0'
   pod 'ReactiveObjC', '~> 3.1.1'
   pod 'SDWebImage', '~> 5.9.0'
